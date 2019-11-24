@@ -1,0 +1,821 @@
+set cut_paste_input [stack 0]
+version 11.3 v5
+BackdropNode {
+ inputs 0
+ name BackdropNode2
+ label " CLOUDTASTIC  ---  v1.2"
+ note_font "Arial Black"
+ note_font_size 120
+ note_font_color 0x363636ff
+ selected true
+ xpos 319
+ ypos -1249
+ bdwidth 2476
+ bdheight 2494
+}
+Camera2 {
+ inputs 0
+ name Camera1
+ selected true
+ xpos 1112
+ ypos 626
+}
+Dot {
+ name CameraDot
+ label "\nPlug your camera in here"
+ note_font "Arial Black"
+ note_font_size 16
+ selected true
+ xpos 1294
+ ypos 650
+}
+Radial {
+ inputs 0
+ area {100 100 {root.format.width-100} {root.format.height-100}}
+ name Radial1
+ selected true
+ xpos 496
+ ypos -509
+}
+Dot {
+ name Dot19
+ label "  "
+ note_font "Arial Black"
+ note_font_size 16
+ selected true
+ xpos 750
+ ypos -505
+}
+set Ndcf5e60 [stack 0]
+Dot {
+ name Dot20
+ label "  "
+ note_font "Arial Black"
+ note_font_size 16
+ selected true
+ xpos 950
+ ypos -505
+}
+set Nddf0140 [stack 0]
+Dot {
+ name Dot21
+ label "  "
+ note_font "Arial Black"
+ note_font_size 16
+ selected true
+ xpos 1143
+ ypos -505
+}
+set Ndd70950 [stack 0]
+Reformat {
+ inputs 0
+ pbb true
+ name Reformat2
+ selected true
+ xpos 1189
+ ypos -771
+}
+Keyer {
+ operation "luminance key"
+ range {0 0.2891088609 1 1}
+ name Keyer2
+ selected true
+ xpos 1189
+ ypos -710
+}
+FrameHold {
+ first_frame 1001
+ name FrameHold2
+ selected true
+ xpos 1189
+ ypos -674
+}
+Merge2 {
+ inputs 2
+ operation mask
+ bbox A
+ name Merge1
+ selected true
+ xpos 1189
+ ypos -463
+}
+Grade {
+ multiply {{CLOUDTASTIC_CONTROLS.cloud_gain} {CLOUDTASTIC_CONTROLS.cloud_gain} {CLOUDTASTIC_CONTROLS.cloud_gain} {CLOUDTASTIC_CONTROLS.cloud_gain}}
+ gamma {{CLOUDTASTIC_CONTROLS.cloud_gamma} {CLOUDTASTIC_CONTROLS.cloud_gamma} {CLOUDTASTIC_CONTROLS.cloud_gamma} {CLOUDTASTIC_CONTROLS.cloud_gamma}}
+ black_clamp false
+ name Grade2
+ selected true
+ xpos 1189
+ ypos -270
+}
+Card2 {
+ rows 2
+ columns 2
+ uniform_scale 10
+ control_points {3 3 3 6 
+
+1 {-0.5 -0.5 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {0 0 0} 
+1 {0 -0.5 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {0.5 0 0} 
+1 {0.5 -0.5 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {1 0 0} 
+1 {-0.5 0 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {0 0.5 0} 
+1 {0 0 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {0.5 0.5 0} 
+1 {0.5 0 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {1 0.5 0} 
+1 {-0.5 0.5 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {0 1 0} 
+1 {0 0.5 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {0.5 1 0} 
+1 {0.5 0.5 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {1 1 0} }
+ name Card10
+ selected true
+ xpos 1189
+ ypos -59
+}
+push $Ndd70950
+Dot {
+ name Dot22
+ label "  "
+ note_font "Arial Black"
+ note_font_size 16
+ selected true
+ xpos 1307
+ ypos -505
+}
+set Nde790f0 [stack 0]
+Reformat {
+ inputs 0
+ pbb true
+ name Reformat3
+ selected true
+ xpos 1364
+ ypos -772
+}
+Keyer {
+ operation "luminance key"
+ range {0 0.2891088609 1 1}
+ name Keyer3
+ selected true
+ xpos 1364
+ ypos -711
+}
+FrameHold {
+ first_frame 1001
+ name FrameHold3
+ selected true
+ xpos 1364
+ ypos -675
+}
+Merge2 {
+ inputs 2
+ operation mask
+ bbox A
+ name Merge2
+ selected true
+ xpos 1364
+ ypos -465
+}
+Grade {
+ multiply {{CLOUDTASTIC_CONTROLS.cloud_gain} {CLOUDTASTIC_CONTROLS.cloud_gain} {CLOUDTASTIC_CONTROLS.cloud_gain} {CLOUDTASTIC_CONTROLS.cloud_gain}}
+ gamma {{CLOUDTASTIC_CONTROLS.cloud_gamma} {CLOUDTASTIC_CONTROLS.cloud_gamma} {CLOUDTASTIC_CONTROLS.cloud_gamma} {CLOUDTASTIC_CONTROLS.cloud_gamma}}
+ black_clamp false
+ name Grade3
+ selected true
+ xpos 1364
+ ypos -274
+}
+Card2 {
+ rows 2
+ columns 2
+ uniform_scale 10
+ control_points {3 3 3 6 
+
+1 {-0.5 -0.5 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {0 0 0} 
+1 {0 -0.5 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {0.5 0 0} 
+1 {0.5 -0.5 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {1 0 0} 
+1 {-0.5 0 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {0 0.5 0} 
+1 {0 0 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {0.5 0.5 0} 
+1 {0.5 0 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {1 0.5 0} 
+1 {-0.5 0.5 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {0 1 0} 
+1 {0 0.5 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {0.5 1 0} 
+1 {0.5 0.5 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {1 1 0} }
+ name Card11
+ selected true
+ xpos 1364
+ ypos -61
+}
+push $Nde790f0
+Dot {
+ name Dot23
+ label "  "
+ note_font "Arial Black"
+ note_font_size 16
+ selected true
+ xpos 1477
+ ypos -505
+}
+set Ne053c20 [stack 0]
+Reformat {
+ inputs 0
+ pbb true
+ name Reformat4
+ selected true
+ xpos 1548
+ ypos -774
+}
+Keyer {
+ operation "luminance key"
+ range {0 0.2891088609 1 1}
+ name Keyer4
+ selected true
+ xpos 1548
+ ypos -713
+}
+FrameHold {
+ first_frame 1001
+ name FrameHold4
+ selected true
+ xpos 1548
+ ypos -677
+}
+Merge2 {
+ inputs 2
+ operation mask
+ bbox A
+ name Merge3
+ selected true
+ xpos 1548
+ ypos -463
+}
+Grade {
+ multiply {{CLOUDTASTIC_CONTROLS.cloud_gain} {CLOUDTASTIC_CONTROLS.cloud_gain} {CLOUDTASTIC_CONTROLS.cloud_gain} {CLOUDTASTIC_CONTROLS.cloud_gain}}
+ gamma {{CLOUDTASTIC_CONTROLS.cloud_gamma} {CLOUDTASTIC_CONTROLS.cloud_gamma} {CLOUDTASTIC_CONTROLS.cloud_gamma} {CLOUDTASTIC_CONTROLS.cloud_gamma}}
+ black_clamp false
+ name Grade4
+ selected true
+ xpos 1548
+ ypos -269
+}
+Card2 {
+ rows 2
+ columns 2
+ uniform_scale 10
+ control_points {3 3 3 6 
+
+1 {-0.5 -0.5 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {0 0 0} 
+1 {0 -0.5 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {0.5 0 0} 
+1 {0.5 -0.5 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {1 0 0} 
+1 {-0.5 0 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {0 0.5 0} 
+1 {0 0 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {0.5 0.5 0} 
+1 {0.5 0 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {1 0.5 0} 
+1 {-0.5 0.5 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {0 1 0} 
+1 {0 0.5 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {0.5 1 0} 
+1 {0.5 0.5 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {1 1 0} }
+ name Card12
+ selected true
+ xpos 1548
+ ypos -61
+}
+push $Ne053c20
+Dot {
+ name Dot24
+ label "  "
+ note_font "Arial Black"
+ note_font_size 16
+ selected true
+ xpos 1673
+ ypos -505
+}
+set Ne0d9560 [stack 0]
+Dot {
+ name Dot25
+ label "  "
+ note_font "Arial Black"
+ note_font_size 16
+ selected true
+ xpos 1876
+ ypos -505
+}
+set Ne0df0c0 [stack 0]
+Dot {
+ name Dot26
+ label "  "
+ note_font "Arial Black"
+ note_font_size 16
+ selected true
+ xpos 2066
+ ypos -505
+}
+set Ne0e4310 [stack 0]
+Reformat {
+ inputs 0
+ pbb true
+ name Reformat7
+ selected true
+ xpos 2133
+ ypos -781
+}
+Keyer {
+ operation "luminance key"
+ range {0 0.2891088609 1 1}
+ name Keyer7
+ selected true
+ xpos 2133
+ ypos -720
+}
+FrameHold {
+ first_frame 1001
+ name FrameHold7
+ selected true
+ xpos 2133
+ ypos -684
+}
+Merge2 {
+ inputs 2
+ operation mask
+ bbox A
+ name Merge4
+ selected true
+ xpos 2133
+ ypos -465
+}
+Grade {
+ multiply {{CLOUDTASTIC_CONTROLS.cloud_gain} {CLOUDTASTIC_CONTROLS.cloud_gain} {CLOUDTASTIC_CONTROLS.cloud_gain} {CLOUDTASTIC_CONTROLS.cloud_gain}}
+ gamma {{CLOUDTASTIC_CONTROLS.cloud_gamma} {CLOUDTASTIC_CONTROLS.cloud_gamma} {CLOUDTASTIC_CONTROLS.cloud_gamma} {CLOUDTASTIC_CONTROLS.cloud_gamma}}
+ black_clamp false
+ name Grade7
+ selected true
+ xpos 2133
+ ypos -276
+}
+Card2 {
+ rows 2
+ columns 2
+ uniform_scale 10
+ control_points {3 3 3 6 
+
+1 {-0.5 -0.5 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {0 0 0} 
+1 {0 -0.5 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {0.5 0 0} 
+1 {0.5 -0.5 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {1 0 0} 
+1 {-0.5 0 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {0 0.5 0} 
+1 {0 0 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {0.5 0.5 0} 
+1 {0.5 0 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {1 0.5 0} 
+1 {-0.5 0.5 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {0 1 0} 
+1 {0 0.5 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {0.5 1 0} 
+1 {0.5 0.5 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {1 1 0} }
+ name Card13
+ selected true
+ xpos 2133
+ ypos -61
+}
+push $Ne0e4310
+Dot {
+ name Dot27
+ label "  "
+ note_font "Arial Black"
+ note_font_size 16
+ selected true
+ xpos 2271
+ ypos -505
+}
+Reformat {
+ inputs 0
+ pbb true
+ name Reformat8
+ selected true
+ xpos 2379
+ ypos -781
+}
+Keyer {
+ operation "luminance key"
+ range {0 0.2891088609 1 1}
+ name Keyer8
+ selected true
+ xpos 2379
+ ypos -720
+}
+FrameHold {
+ first_frame 1001
+ name FrameHold8
+ selected true
+ xpos 2379
+ ypos -684
+}
+Merge2 {
+ inputs 2
+ operation mask
+ bbox A
+ name Merge5
+ selected true
+ xpos 2379
+ ypos -465
+}
+Grade {
+ multiply {{CLOUDTASTIC_CONTROLS.cloud_gain} {CLOUDTASTIC_CONTROLS.cloud_gain} {CLOUDTASTIC_CONTROLS.cloud_gain} {CLOUDTASTIC_CONTROLS.cloud_gain}}
+ gamma {{CLOUDTASTIC_CONTROLS.cloud_gamma} {CLOUDTASTIC_CONTROLS.cloud_gamma} {CLOUDTASTIC_CONTROLS.cloud_gamma} {CLOUDTASTIC_CONTROLS.cloud_gamma}}
+ black_clamp false
+ name Grade8
+ selected true
+ xpos 2379
+ ypos -275
+}
+Card2 {
+ rows 2
+ columns 2
+ uniform_scale 10
+ control_points {3 3 3 6 
+
+1 {-0.5 -0.5 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {0 0 0} 
+1 {0 -0.5 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {0.5 0 0} 
+1 {0.5 -0.5 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {1 0 0} 
+1 {-0.5 0 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {0 0.5 0} 
+1 {0 0 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {0.5 0.5 0} 
+1 {0.5 0 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {1 0.5 0} 
+1 {-0.5 0.5 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {0 1 0} 
+1 {0 0.5 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {0.5 1 0} 
+1 {0.5 0.5 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {1 1 0} }
+ name Card14
+ selected true
+ xpos 2379
+ ypos -61
+}
+push $Ne0d9560
+Reformat {
+ inputs 0
+ pbb true
+ name Reformat5
+ selected true
+ xpos 1750
+ ypos -774
+}
+Keyer {
+ operation "luminance key"
+ range {0 0.2891088609 1 1}
+ name Keyer5
+ selected true
+ xpos 1750
+ ypos -713
+}
+FrameHold {
+ first_frame 1001
+ name FrameHold5
+ selected true
+ xpos 1750
+ ypos -677
+}
+Merge2 {
+ inputs 2
+ operation mask
+ bbox A
+ name Merge6
+ selected true
+ xpos 1750
+ ypos -463
+}
+Grade {
+ multiply {{CLOUDTASTIC_CONTROLS.cloud_gain} {CLOUDTASTIC_CONTROLS.cloud_gain} {CLOUDTASTIC_CONTROLS.cloud_gain} {CLOUDTASTIC_CONTROLS.cloud_gain}}
+ gamma {{CLOUDTASTIC_CONTROLS.cloud_gamma} {CLOUDTASTIC_CONTROLS.cloud_gamma} {CLOUDTASTIC_CONTROLS.cloud_gamma} {CLOUDTASTIC_CONTROLS.cloud_gamma}}
+ black_clamp false
+ name Grade5
+ selected true
+ xpos 1750
+ ypos -274
+}
+Card2 {
+ rows 2
+ columns 2
+ uniform_scale 10
+ control_points {3 3 3 6 
+
+1 {-0.5 -0.5 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {0 0 0} 
+1 {0 -0.5 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {0.5 0 0} 
+1 {0.5 -0.5 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {1 0 0} 
+1 {-0.5 0 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {0 0.5 0} 
+1 {0 0 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {0.5 0.5 0} 
+1 {0.5 0 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {1 0.5 0} 
+1 {-0.5 0.5 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {0 1 0} 
+1 {0 0.5 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {0.5 1 0} 
+1 {0.5 0.5 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {1 1 0} }
+ name Card15
+ selected true
+ xpos 1750
+ ypos -61
+}
+push $Ne0df0c0
+Reformat {
+ inputs 0
+ pbb true
+ name Reformat6
+ selected true
+ xpos 1933
+ ypos -777
+}
+Keyer {
+ operation "luminance key"
+ range {0 0.2891088609 1 1}
+ name Keyer6
+ selected true
+ xpos 1933
+ ypos -716
+}
+FrameHold {
+ first_frame 1001
+ name FrameHold6
+ selected true
+ xpos 1933
+ ypos -680
+}
+Merge2 {
+ inputs 2
+ operation mask
+ bbox A
+ name Merge7
+ selected true
+ xpos 1933
+ ypos -463
+}
+Grade {
+ multiply {{CLOUDTASTIC_CONTROLS.cloud_gain} {CLOUDTASTIC_CONTROLS.cloud_gain} {CLOUDTASTIC_CONTROLS.cloud_gain} {CLOUDTASTIC_CONTROLS.cloud_gain}}
+ gamma {{CLOUDTASTIC_CONTROLS.cloud_gamma} {CLOUDTASTIC_CONTROLS.cloud_gamma} {CLOUDTASTIC_CONTROLS.cloud_gamma} {CLOUDTASTIC_CONTROLS.cloud_gamma}}
+ black_clamp false
+ name Grade6
+ selected true
+ xpos 1933
+ ypos -277
+}
+Card2 {
+ rows 2
+ columns 2
+ uniform_scale 10
+ control_points {3 3 3 6 
+
+1 {-0.5 -0.5 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {0 0 0} 
+1 {0 -0.5 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {0.5 0 0} 
+1 {0.5 -0.5 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {1 0 0} 
+1 {-0.5 0 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {0 0.5 0} 
+1 {0 0 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {0.5 0.5 0} 
+1 {0.5 0 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {1 0.5 0} 
+1 {-0.5 0.5 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {0 1 0} 
+1 {0 0.5 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {0.5 1 0} 
+1 {0.5 0.5 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {1 1 0} }
+ name Card16
+ selected true
+ xpos 1933
+ ypos -61
+}
+push $Ndcf5e60
+Reformat {
+ inputs 0
+ pbb true
+ name Reformat25
+ selected true
+ xpos 830
+ ypos -770
+}
+Keyer {
+ operation "luminance key"
+ range {0 0.2891088609 1 1}
+ name Keyer26
+ selected true
+ xpos 830
+ ypos -709
+}
+FrameHold {
+ first_frame 1001
+ name FrameHold28
+ selected true
+ xpos 830
+ ypos -673
+}
+Merge2 {
+ inputs 2
+ operation mask
+ bbox A
+ name Merge8
+ selected true
+ xpos 830
+ ypos -463
+}
+Grade {
+ multiply {{CLOUDTASTIC_CONTROLS.cloud_gain} {CLOUDTASTIC_CONTROLS.cloud_gain} {CLOUDTASTIC_CONTROLS.cloud_gain} {CLOUDTASTIC_CONTROLS.cloud_gain}}
+ gamma {{CLOUDTASTIC_CONTROLS.cloud_gamma} {CLOUDTASTIC_CONTROLS.cloud_gamma} {CLOUDTASTIC_CONTROLS.cloud_gamma} {CLOUDTASTIC_CONTROLS.cloud_gamma}}
+ black_clamp false
+ name Grade17
+ selected true
+ xpos 830
+ ypos -271
+}
+Card2 {
+ rows 1
+ columns 1
+ uniform_scale 10
+ control_points {3 3 3 6 
+
+1 {-0.5 -0.5 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {0 0 0} 
+1 {0 -0.5 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {0.5 0 0} 
+1 {0.5 -0.5 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {1 0 0} 
+1 {-0.5 0 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {0 0.5 0} 
+1 {0 0 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {0.5 0.5 0} 
+1 {0.5 0 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {1 0.5 0} 
+1 {-0.5 0.5 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {0 1 0} 
+1 {0 0.5 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {0.5 1 0} 
+1 {0.5 0.5 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {1 1 0} }
+ name Card17
+ selected true
+ xpos 830
+ ypos -57
+}
+push $Nddf0140
+Reformat {
+ inputs 0
+ pbb true
+ name Reformat1
+ selected true
+ xpos 1019
+ ypos -767
+}
+Keyer {
+ operation "luminance key"
+ range {0 0.2891088609 1 1}
+ name Keyer1
+ selected true
+ xpos 1019
+ ypos -706
+}
+FrameHold {
+ first_frame 1001
+ name FrameHold1
+ selected true
+ xpos 1019
+ ypos -670
+}
+Merge2 {
+ inputs 2
+ operation mask
+ bbox A
+ name Merge9
+ selected true
+ xpos 1019
+ ypos -463
+}
+Grade {
+ multiply {{CLOUDTASTIC_CONTROLS.cloud_gain} {CLOUDTASTIC_CONTROLS.cloud_gain} {CLOUDTASTIC_CONTROLS.cloud_gain} {CLOUDTASTIC_CONTROLS.cloud_gain}}
+ gamma {{CLOUDTASTIC_CONTROLS.cloud_gamma} {CLOUDTASTIC_CONTROLS.cloud_gamma} {CLOUDTASTIC_CONTROLS.cloud_gamma} {CLOUDTASTIC_CONTROLS.cloud_gamma}}
+ black_clamp false
+ name Grade1
+ selected true
+ xpos 1019
+ ypos -271
+}
+Card2 {
+ rows 2
+ columns 2
+ uniform_scale 10
+ control_points {3 3 3 6 
+
+1 {-0.5 -0.5 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {0 0 0} 
+1 {0 -0.5 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {0.5 0 0} 
+1 {0.5 -0.5 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0.1666666865 0} 0 {0 0 0} 0 {1 0 0} 
+1 {-0.5 0 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {0 0.5 0} 
+1 {0 0 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {0.5 0.5 0} 
+1 {0.5 0 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0.1666666716 0} 0 {0 -0.1666666716 0} 0 {1 0.5 0} 
+1 {-0.5 0.5 0} 0 {0.1666666865 0 0} 0 {0 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {0 1 0} 
+1 {0 0.5 0} 0 {0.1666666716 0 0} 0 {-0.1666666716 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {0.5 1 0} 
+1 {0.5 0.5 0} 0 {0 0 0} 0 {-0.1666666865 0 0} 0 {0 0 0} 0 {0 -0.1666666865 0} 0 {1 1 0} }
+ name Card18
+ selected true
+ xpos 1019
+ ypos -61
+}
+push $cut_paste_input
+Cube {
+ display wireframe
+ render_mode wireframe
+ rows 1
+ columns 1
+ cube {-0.5 0.1679999977 -0.1089999974 -0.1568000019 0.2639999986 0.3050000072}
+ translate {6404.183105 -1989.998413 -2600}
+ scaling {2 1 1}
+ uniform_scale 10000
+ name Cube2
+ selected true
+ xpos 1235
+ ypos 319
+}
+push 0
+ParticleEmitter {
+ inputs 11
+ start_frame {{CLOUDTASTIC_CONTROLS.start_frame-1}}
+ emit_from bbox
+ randomize_type "randomized direction"
+ rate {{CLOUDTASTIC_CONTROLS.p_count}}
+ rate_channel -rgba.red
+ lifetime 1
+ rotation_velocity_variation 1
+ size {{CLOUDTASTIC_CONTROLS.p_size}}
+ size_variation 1
+ start_frame_animation random
+ frame_advance constant
+ max_clip_length 0
+ seed {{CLOUDTASTIC_CONTROLS.seed}}
+ name ParticleEmitter2
+ selected true
+ xpos 1548
+ ypos 319
+}
+ParticleLookAt {
+ position {{CameraDot.input.translate(CLOUDTASTIC_CONTROLS.start_frame)} {CameraDot.input.translate(CLOUDTASTIC_CONTROLS.start_frame)} {CameraDot.input.translate(CLOUDTASTIC_CONTROLS.start_frame)}}
+ name ParticleLookAt2
+ selected true
+ xpos 1548
+ ypos 428
+}
+ParticleCurve {
+ curves {r {curve l 0 0}
+   g {curve l 0 0}
+   b {curve l 0 0}
+   a {curve l 0 0}
+   size {curve 0 0}
+   mass {}}
+ affect_size true
+ region {{curve x1001 1}}
+ translate {{CameraDot.input.translate} {CameraDot.input.translate} {CameraDot.input.translate}}
+ rotate {{CameraDot.input.rotate} {CameraDot.input.rotate} {CameraDot.input.rotate}}
+ uniform_scale {{parent.CLOUDTASTIC_CONTROLS.kill_area}}
+ name ParticleCurve1
+ selected true
+ xpos 1548
+ ypos 488
+ disable {{!CLOUDTASTIC_CONTROLS.kill_near_camera}}
+}
+FrameHold {
+ first_frame {{CLOUDTASTIC_CONTROLS.start_frame}}
+ name FrameHold20
+ selected true
+ xpos 1548
+ ypos 547
+}
+Constant {
+ inputs 0
+ name Constant2
+ selected true
+ xpos 1804
+ ypos 623
+}
+ScanlineRender {
+ inputs 3
+ conservative_shader_sampling false
+ overscan {0 0}
+ shutteroffset centred
+ motion_vectors_type distance
+ name ScanlineRender2
+ selected true
+ xpos 1548
+ ypos 646
+}
+NoOp {
+ name CLOUDTASTIC_CONTROLS
+ tile_color 0x20202ff
+ note_font_size 36
+ note_font_color 0xffffffff
+ selected true
+ xpos 1548
+ ypos 981
+ addUserKnob {20 Cloudtastic}
+ addUserKnob {26 ""}
+ addUserKnob {3 start_frame l "Start Frame"}
+ start_frame {{root.first_frame}}
+ addUserKnob {3 p_count l "Particle Amount"}
+ p_count 2000
+ addUserKnob {3 p_size l "Particle Size"}
+ p_size 70
+ addUserKnob {3 seed l "Random Seed"}
+ seed 12345
+ addUserKnob {26 ""}
+ addUserKnob {6 kill_near_camera l " Kill clouds close to camera?" +STARTLINE}
+ kill_near_camera true
+ addUserKnob {7 kill_area l "Kill area size" R 0 5000}
+ kill_area 600
+ addUserKnob {26 ""}
+ addUserKnob {19 cloud_gain l "Cloud Gain" R 0 4}
+ cloud_gain 1
+ addUserKnob {6 cloud_gain_panelDropped l "panel dropped state" -STARTLINE +HIDDEN}
+ addUserKnob {6 cloud_gain_panelDropped_1 l "panel dropped state" -STARTLINE +HIDDEN}
+ addUserKnob {6 cloud_gain_panelDropped_1_1 l "panel dropped state" -STARTLINE +HIDDEN}
+ addUserKnob {6 cloud_gain_panelDropped_1_1_1 l "panel dropped state" -STARTLINE +HIDDEN}
+ addUserKnob {6 cloud_gain_panelDropped_1_1_1_1 l "panel dropped state" -STARTLINE +HIDDEN}
+ addUserKnob {6 cloud_gain_panelDropped_1_1_1_1_1 l "panel dropped state" -STARTLINE +HIDDEN}
+ addUserKnob {19 cloud_gamma l "Gloud Gamma" R 0 2}
+ cloud_gamma 0.75
+ addUserKnob {6 cloud_gamma_panelDropped l "panel dropped state" -STARTLINE +HIDDEN}
+ addUserKnob {6 cloud_gamma_panelDropped_1 l "panel dropped state" -STARTLINE +HIDDEN}
+ addUserKnob {6 cloud_gamma_panelDropped_1_1 l "panel dropped state" -STARTLINE +HIDDEN}
+ addUserKnob {6 cloud_gamma_panelDropped_1_1_1 l "panel dropped state" -STARTLINE +HIDDEN}
+ addUserKnob {6 cloud_gamma_panelDropped_1_1_1_1 l "panel dropped state" -STARTLINE +HIDDEN}
+ addUserKnob {6 cloud_gamma_panelDropped_1_1_1_1_1 l "panel dropped state" -STARTLINE +HIDDEN}
+ addUserKnob {6 cloud_gamma_panelDropped_1_1_1_1_1_1 l "panel dropped state" -STARTLINE +HIDDEN}
+ addUserKnob {6 cloud_gain_panelDropped_1_1_1_1_1_1 l "panel dropped state" -STARTLINE +HIDDEN}
+ addUserKnob {26 ""}
+ addUserKnob {26 instructions l "" +STARTLINE T "<b>Usage:</b><br><br>\n\n<b>1)</b> Find some atmospheric cloud elements, and plug them into<br>&nbsp;&nbsp; the dots above. Frameholding the same, long element on <br>&nbsp;&nbsp; different frames works pretty well too! The more unique <br>&nbsp;&nbsp; sprites you have, the better your result will look.<br>\n<b>2)</b> Make sure the Reformat's are reformatting your elements to<br>&nbsp;&nbsp; root.format, and the masks are cutting off any hard edges<br>&nbsp;&nbsp; <i>(this should be the case by default)</i>.<br>\n<b>3)</b> Adjust the FrameHolds to freeze on the best frame of<br>&nbsp;&nbsp; each element.<br>\n<b>4)</b> Adjust the Cube to surrond your Camera. Be sure to leave plenty<br>&nbsp;&nbsp; of extra space into the distance for maximum parallaxing goodness.<br>\n<b>5)</b> View this node in the 3D viewer through your camera, and adjust the<br>&nbsp;&nbsp; <b>Particle Amount</b>, <b>Particle Size</b>, <b>Random Seed</b> and <b>Cloud Gain/Gamma</b><br>&nbsp;&nbsp; controls until you see your desired result."}
+ addUserKnob {26 ""}
+ addUserKnob {20 Info}
+ addUserKnob {26 ""}
+ addUserKnob {26 version l "" +STARTLINE T "\nCreated by Ben McEwan\nwww.benmcewan.com\n\nVersion 1.2\nLast Updated: October 21st, 2019\n"}
+ addUserKnob {26 ""}
+}

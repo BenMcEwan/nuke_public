@@ -1,0 +1,115 @@
+#! /data/studio/upipe/apps/nuke/11.1v1/bin/linux/centos7/libnuke-11.1.1.so -nx
+version 11.1 v1
+Group {
+name bm_EdgeMatte
+ help "Created to \"edgeDetect\" mattes. Probably better gizmos out there that do the same thngSimple gizmo to get a clean, controllable outline (like Edge Detect) from any matte. Useful for isolating edgeExtends and the like."
+ tile_color 0x212121ff
+ addUserKnob {20 Options}
+ addUserKnob {26 ""}
+ addUserKnob {4 filterType l Filter M {Box Triangle Quadratic Gaussian}}
+ addUserKnob {26 ""}
+ addUserKnob {14 innerEdge l "Inner Edge" R 0 100}
+ innerEdge 2
+ addUserKnob {14 innerBlur l "Inner Blur" R 0 100}
+ addUserKnob {14 outerEdge l "Outer Edge" R 0 100}
+ outerEdge 2
+ addUserKnob {14 outerBlur l "Outer Blur" R 0 100}
+ addUserKnob {26 ""}
+ addUserKnob {12 edgeTranslate l Translate}
+ addUserKnob {7 edgeShift l "Erode / Dilate" R -20 20}
+ addUserKnob {14 globalBlur l "Global Blur" R 0 100}
+ addUserKnob {26 ""}
+ addUserKnob {7 edgeRotate l INVISIBLE +INVISIBLE R -180 180}
+ addUserKnob {14 edgeScale l INVISIBLE +INVISIBLE R 0 100}
+ edgeScale 1
+ addUserKnob {12 edgeCentre l INVISIBLE +INVISIBLE}
+ edgeCentre {1024 778}
+ addUserKnob {20 infoTab l Info}
+ addUserKnob {26 "" +STARTLINE}
+ addUserKnob {26 versionInfo l "" +STARTLINE T "\nCreated by Ben McEwan\nwww.benmcewan.com\n\nVersion 1.1\nLast Updated: January 23rd, 2018\n"}
+ addUserKnob {26 "" +STARTLINE}
+}
+ Input {
+  inputs 0
+  name Input1
+  xpos 542
+  ypos 483
+ }
+ Dot {
+  name Dot1
+  label "  "
+  note_font "Arial Black"
+  note_font_size 16
+  xpos 576
+  ypos 523
+ }
+set Nbbe7900 [stack 0]
+ FilterErode {
+  channels alpha
+  size {{innerEdge} {innerEdge}}
+  filter {{filterType}}
+  name FilterErode2
+  xpos 487
+  ypos 584
+ }
+ Blur {
+  channels alpha
+  size {{innerBlur} {innerBlur}}
+  name Blur1
+  xpos 487
+  ypos 622
+ }
+push $Nbbe7900
+ FilterErode {
+  channels alpha
+  size {{-outerEdge} {-outerEdge}}
+  filter {{filterType}}
+  name FilterErode1
+  xpos 608
+  ypos 585
+ }
+ Blur {
+  channels alpha
+  size {{outerBlur} {outerBlur}}
+  name Blur2
+  xpos 608
+  ypos 623
+ }
+ Merge2 {
+  inputs 2
+  operation stencil
+  name Merge1
+  xpos 538
+  ypos 686
+ }
+ FilterErode {
+  channels alpha
+  size {{edgeShift}}
+  name FilterErode3
+  xpos 538
+  ypos 751
+ }
+ Blur {
+  channels alpha
+  size {{globalBlur} {globalBlur}}
+  name Blur3
+  xpos 538
+  ypos 789
+ }
+ Transform {
+  translate {{edgeTranslate i} {edgeTranslate i}}
+  rotate {{edgeRotate i}}
+  scale {{edgeScale i} {edgeScale i}}
+  center {{edgeCentre} {edgeCentre}}
+  shutteroffset centred
+  name Transform1
+  selected true
+  xpos 538
+  ypos 827
+ }
+ Output {
+  name Output1
+  xpos 538
+  ypos 898
+ }
+end_group
