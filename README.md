@@ -1,2 +1,4 @@
 # nuke_public
-Gizmos / Python Scripts for Nuke
+Ben McEwan's Gizmos / Python Scripts for Nuke
+
+Descriptions to come at a later date...
