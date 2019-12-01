@@ -1,6 +1,6 @@
 # --------------------------------------------------------------
 #  netCopy.py
-#  Version: 4.0.0
+#  Version: 4.0.1
 #  Last Updated: July 4th, 2019
 #  Author: Ben McEwan
 # --------------------------------------------------------------
@@ -146,6 +146,5 @@ def netPaste():
 
 
 # Add to Edit menu
-nuke.menu('Nuke').addCommand('Image Engine/NetCopy', 'netCopy.netCopy()', 'ctrl+shift+c')
-nuke.menu('Nuke').addCommand('Image Engine/NetPaste', 'netCopy.netPaste()', 'ctrl+shift+v')
-nuke.menu('Nuke').addCommand('Image Engine/-', "", "") # Add separator
+nuke.menu('Nuke').addCommand('Edit/NetCopy', 'netCopy.netCopy()', 'ctrl+shift+c')
+nuke.menu('Nuke').addCommand('Edit/NetPaste', 'netCopy.netPaste()', 'ctrl+shift+v')
