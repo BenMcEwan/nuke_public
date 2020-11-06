@@ -2,7 +2,7 @@
 
 # nuke_public
 Ben McEwan's Gizmos & Python Scripts for Nuke.  
-Learn more about GitHub with my <a href="https://learn.benmcewan.com/github_for_compositors">GitHub for Compositors</a> course.
+Learn more about GitHub with my <a href="https://learn.benmcewan.com/github_for_compositors">GitHub for Compositors</a> course.  
 <br>
 
 # Table of Contents
