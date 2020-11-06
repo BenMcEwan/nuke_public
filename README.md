@@ -1,5 +1,8 @@
+<a href="https://benmcewan.com"><img src="https://www.benmcewan.com/images/bmlogo.png"></a>
+
 # nuke_public
-Ben McEwan's Gizmos & Python Scripts for Nuke.
+Ben McEwan's Gizmos & Python Scripts for Nuke.  
+Learn more about GitHub with my <a href="https://learn.benmcewan.com/github_for_compositors">GitHub for Compositors</a> course.
 
 # Table of Contents
 
@@ -35,6 +38,7 @@ Ben McEwan's Gizmos & Python Scripts for Nuke.
 
 ## Breakdownerizationer
 A tool to automate the creation of simple breakdowns in Nuke. No bloated features, just does what it says on the tin.  
+
 *Usage Notes:*
 - Currently only supports pre-rendered layers.
 - Breakdown types include:
@@ -46,6 +50,7 @@ A tool to automate the creation of simple breakdowns in Nuke. No bloated feature
 
 ## Cloudtastic
 A light-weight, element-based atmospheric fog box scriptlet.  
+
 *Usage Notes:*
 - See "Usage:" notes on CLOUDTASTIC_CONTROLS NoOp _(pictured below)_
 - Expects atmospheric fog or cloud elements from your elements library.
@@ -112,7 +117,7 @@ Powers up Nuke's default contact sheet with features such as:
 - Adds a User knob for easy resolution scaling in case you want more detail, or more speed.
 - Adds a few controls to adjust our automated text nodes.
 
-<a href="https://benmcewan.com/blog/2018/08/26/power-up-your-contact-sheets/">Click here</a> for a tutorial on how I made this.  
+<a href="https://benmcewan.com/blog/2018/08/26/power-up-your-contact-sheets/" target="_blank">Click here</a> for a tutorial on how I made this.  
 
 ## bm_CurveUtilities.py
 Adds some handy animation shortcuts to a knob's right-click menu:
@@ -168,13 +173,13 @@ Upgrades Nuke's default ```m``` hotkey to be context-aware:
 
 ## bm_Smoothie.py
 Easily smooth curves in Nuke's curve editor. Currently only supports single knobs _(e.g. multiply that hasn't been split into RGBA knobs, mix knobs, etc.)_.  
-<a href="https://benmcewan.com/blog/2020/08/03/programmatically-editing-animation-curves-in-nuke/">Click here</a> to read a tutorial on how this was created, and how to programatically edit animation curves in Nuke.
+<a href="https://benmcewan.com/blog/2020/08/03/programmatically-editing-animation-curves-in-nuke/" target="_blank">Click here</a> to read a tutorial on how this was created, and how to programatically edit animation curves in Nuke.
 
 <a href="#"><img src="https://benmcewan.com/images/github/bm_Smoothie.gif"></a>
 
 ## bm_SwapInOut.py
 Easily fix scripts that use in & out, instead of mask & stencil.  
-If you do this, <a href="https://conradolson.com/nuke-using-in-out-nodes">Conrad Olson's video</a> is required watching.
+If you do this, <a href="https://conradolson.com/nuke-using-in-out-nodes" target="_blank">Conrad Olson's video</a> is required watching.
 
 ## bm_ViewerToggle.py
 Adds `ALT+Q` shortcut to toggle viewer exposure & gamma between custom value and default.
