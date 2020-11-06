@@ -30,6 +30,7 @@ Learn more about GitHub with my <a href="https://learn.benmcewan.com/github_for_
   - [bm_OperationSwitcher.py](#bm_operationswitcherpy)
   - [bm_QuickKeys.py](#bm_quickkeyspy)
   - [bm_SmartMerge.py](#bm_smartmergepy)
+  - [bm_ShuffleShortcuts.py](#bm_shuffleshortcutspy)
   - [bm_Smoothie.py](#bm_smoothiepy)
   - [bm_SwapInOut.py](#bm_swapinoutpy)
   - [bm_ViewerToggle.py](#bm_viewertogglepy)
@@ -161,6 +162,10 @@ Adds an easy way to set on/off keyframes on mix knobs & switch nodes.
 - ```META+/``` opens a dialog box to manaully set a first frame, last frame, and a fade duration with values other than 0 or 1.
 
 <a href="#"><img src="https://benmcewan.com/images/github/bm_QuickKeys.png"></a>
+
+## bm_ShuffleShortcuts.py
+Creates a shuffle node that shuffle RGBA channels into the Green channel.   
+_Note: Currently uses the old Shuffle node..._
 
 ## bm_SmartMerge.py
 Upgrades Nuke's default ```m``` hotkey to be context-aware:
