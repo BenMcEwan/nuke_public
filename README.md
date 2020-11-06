@@ -3,7 +3,7 @@ Ben McEwan's Gizmos & Python Scripts for Nuke.
 
 # Table of Contents
 
-- [Gizmos](# gizmos)
+- [Gizmos](#gizmos)
   - [Breakdownerizationer](# breakdownerizationer)
   - [Cloudtastic](# cloudtastic)
   - [DeepMerge_Advanced](# deepmerge-advanced)
@@ -14,7 +14,7 @@ Ben McEwan's Gizmos & Python Scripts for Nuke.
   - [bm_MatteCheck](# bm_mattecheck)
   - [bm_NoiseGen](# bm_noisegen)
   - [bm_OpticalGlow](# bm_opticalglow)
-- [Python](# python)
+- [Python](#python)
   - [bm_AutoContactSheet.py](# bm_autocontactsheet.py)
   - [bm_CurveUtilities.py](# bm_curveutilities.py)
   - [bm_EnableTrackerTRS.py](# bm_enabletrackertrs.py)
