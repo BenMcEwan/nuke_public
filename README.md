@@ -164,7 +164,7 @@ Adds an easy way to set on/off keyframes on mix knobs & switch nodes.
 <a href="#"><img src="https://benmcewan.com/images/github/bm_QuickKeys.png"></a>
 
 ## bm_ShuffleShortcuts.py
-Creates a shuffle node that shuffle RGBA channels into the Green channel.   
+Creates shuffle node shortcuts for shuffling a single channel to all other channels.
 _Note: Currently uses the old Shuffle node..._
 
 ## bm_SmartMerge.py
