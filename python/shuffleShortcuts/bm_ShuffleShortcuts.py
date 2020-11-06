@@ -10,7 +10,7 @@
 # --------------------------------------------------------------
 #  USAGE:
 #
-#  Creates a shuffle node that shuffle RGBA channels into the Green channel.
+#  Creates shuffle node shortcuts for shuffling a single channel to all other channels.
 # --------------------------------------------------------------
 
 import nuke
@@ -87,7 +87,7 @@ def shuffleRGBchannels():
 nuke.menu('Nodes').addCommand("Channel/Shuffle (Red to All)", "bm_ShuffleShortcuts.createCustomShuffle('rgba', 'rgba', 'red', 1, 0, 0)", "meta+r", icon="redShuffle.png", shortcutContext=2)
 nuke.menu('Nodes').addCommand("Channel/Shuffle (Green to All)", "bm_ShuffleShortcuts.createCustomShuffle('rgba', 'rgba', 'green', 0, 1, 0)", "meta+g", icon="greenShuffle.png", shortcutContext=2)
 nuke.menu('Nodes').addCommand("Channel/Shuffle (Blue to All)", "bm_ShuffleShortcuts.createCustomShuffle('rgba', 'rgba', 'blue', 0, 0, 1)", "meta+b", icon="blueShuffle.png", shortcutContext=2)
-nuke.menu('Nodes').addCommand("Channel/Shuffle (Alpha to All)", "bm_ShuffleShortcuts.createCustomShuffle('alpha', 'alpha', 'alpha', 1, 1, 1)", "meta+a", icon="alphaToAll.png", shortcutContext=2)
+nuke.menu('Nodes').addCommand("Channel/Shuffle (Alpha to All)", "createCustomShuffle('alpha', 'rgba', 'alpha', 1, 1, 1)", "meta+a", icon="alphaToAll.png", shortcutContext=2)
 nuke.menu('Nodes').addCommand("Channel/Shuffle (Alpha to 0)", "bm_ShuffleShortcuts.createCustomShuffle('alpha', 'alpha', 'black', 0, 0, 0)", "meta+`", icon="alpha0Shuffle.png", shortcutContext=2)
 nuke.menu('Nodes').addCommand("Channel/Shuffle (Alpha to 1)", "bm_ShuffleShortcuts.createCustomShuffle('alpha', 'alpha', 'white', 1, 1, 1)", "meta+1", icon="alpha1Shuffle.png", shortcutContext=2)
 nuke.menu('Nodes').addCommand("Channel/Shuffle (Split RGB channels)", "bm_ShuffleShortcuts.shuffleRGBchannels()", "meta+s", icon="ShuffleSplitRGB.png", shortcutContext=2)
