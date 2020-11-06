@@ -1,22 +1,37 @@
 # nuke_public
 Ben McEwan's Gizmos & Python Scripts for Nuke.
 
-- [nuke_public](#nuke-public)
-- [Gizmos](#gizmos)
-  * [Breakdownerizationer](#breakdownerizationer)
-  * [Cloudtastic](#cloudtastic)
-  * [DeepMerge_Advanced](#deepmerge_advanced)
-  * [bm_CameraShake](#bm_camerashake)
-  * [bm_CurveRemapper](#bm_curveremapper)
-  * [bm_EdgeMatte](#bm_edgematte)
-  * [bm_Lightwrap](#bm_lightwrap)
-  * [bm_MatteCheck](#bm_mattecheck)
-  * [bm_NoiseGen](#bm_noisegen)
-  * [bm_OpticalGlow](#bm_opticalglow)
+# Table of Contents
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+- [Gizmos](# gizmos)
+  - [Breakdownerizationer](# breakdownerizationer)
+  - [Cloudtastic](# cloudtastic)
+  - [DeepMerge_Advanced](# deepmerge-advanced)
+  - [bm_CameraShake](# bm_camerashake)
+  - [bm_CurveRemapper](# bm_curveremapper)
+  - [bm_EdgeMatte](# bm_edgematte)
+  - [bm_Lightwrap](# bm_lightwrap)
+  - [bm_MatteCheck](# bm_mattecheck)
+  - [bm_NoiseGen](# bm_noisegen)
+  - [bm_OpticalGlow](# bm_opticalglow)
+- [Python](# python)
+  - [bm_AutoContactSheet.py](# bm_autocontactsheet.py)
+  - [bm_CurveUtilities.py](# bm_curveutilities.py)
+  - [bm_EnableTrackerTRS.py](# bm_enabletrackertrs.py)
+  - [bm_JumpToKeyframe.py](# bm_jumptokeyframe.py)
+  - [bm_MultiIBK.py](# bm_multiibk.py)
+  - [bm_NodeComment.py](# bm_nodecomment.py)
+  - [bm_NodeSandwich.py](# bm_nodesandwich.py)
+  - [bm_NukeColourConverter.py](# bm_nukecolourconverter.py)
+  - [bm_OperationSwitcher.py](# bm_operationswitcher.py)
+  - [bm_QuickKeys.py](# bm_quickkeys.py)
+  - [bm_SmartMerge.py](# bm_smartmerge.py)
+  - [bm_Smoothie.py](# bm_smoothie.py)
+  - [bm_SwapInOut.py](# bm_swapinout.py)
+  - [bm_ViewerToggle.py](# bm_viewertoggle.py)
+  - [bm_netCopy.py](# bm_netcopy.py)
 
-
+<br>
 # Gizmos
 
 ## Breakdownerizationer
@@ -83,3 +98,88 @@ Generates a random noise curve based on a minimum, maximum & frequency value.
 Adds exponentially-increasing blurs together to produce a more optically-correct, natural glow.  
 
 <a href="#"><img src="https://benmcewan.com/images/github/bm_OpticalGlow.png"></a>
+
+
+<br><br><br>
+
+
+# Python
+
+## bm_AutoContactSheet.py
+Powers up Nuke's default contact sheet with features such as:
+- Automatically lays out your images to maximize screen coverage, with no gaps.
+- Automatically labels what each input is.
+- Automatically sets its own resolution, based off your Project Settings' format.
+- Adds a User knob for easy resolution scaling in case you want more detail, or more speed.
+- Adds a few controls to adjust our automated text nodes.
+
+<a href="https://benmcewan.com/blog/2018/08/26/power-up-your-contact-sheets/">Click here</a> for a tutorial on how I made this.  
+
+## bm_CurveUtilities.py
+Adds some handy animation shortcuts to a knob's right-click menu:
+- FrameHold animation.
+- Set this frame as reference frame.
+- Remap values between 0 and 1.
+
+<a href="#"><img src="https://benmcewan.com/images/github/bm_CurveUtilities.png"></a>
+
+## bm_EnableTrackerTRS.py
+Adds a ```META+T``` hotkey to enable all T, R & S checkboxes in a selected Tracker node.  
+
+## bm_JumpToKeyframe.py
+Map ```Up``` and ```Down``` arrow keys to jump between next & previous keyframes.  
+
+## bm_MultiIBK.py
+Creates the usual IBK setup with 6 expression-linked IBKColour duplicates.  
+
+## bm_NodeComment.py
+Adds ```META+C``` shortcut to create a node's label, so you don't waste valuable clicks opening a node and switching to the Node label.  
+
+## bm_NodeSandwich.py
+Sandwiches selected node between two nodes (like an unpremult/premult, or lin2log/log2lin conversion).  
+- ```CTRL+SHIFT+L``` creates a Log2Lin / Lin2Log sandwich.
+- ```CTRL+SHIFT+P``` creates an Unpremult / Premult sandwich.
+
+## bm_NukeColourConverter.py
+Convert Nuke's hex colour to easier web-based hex, or RGB integer based off the colour sliders we're used to using in Nuke.  
+
+## bm_OperationSwitcher.py
+```CTRL+ALT+S``` toggles a Merge node's operation between over/under, mask/stencil, plus/from, etc.  
+
+## bm_QuickKeys.py
+Adds an easy way to set on/off keyframes on mix knobs & switch nodes.  
+- ```META+,``` sets the current frame "on", and the previous frame "off".
+- ```META+.``` sets the current frame "on", and the next frame "off".
+- ```CTRL+META+,``` sets the current frame "on", and both the next & previous frames "off".
+- ```CTRL+META+.``` sets the current frame "off", and both the next & previous frames "on".
+- ```META+/``` opens a dialog box to manaully set a first frame, last frame, and a fade duration with values other than 0 or 1.
+
+<a href="#"><img src="https://benmcewan.com/images/github/bm_QuickKeys.png"></a>
+
+## bm_SmartMerge.py
+Upgrades Nuke's default ```m``` hotkey to be context-aware:
+- If a set of 2D nodes & Deeps are selected, create DeepRecolor nodes.
+  - If you have multiple sets of Reads & DeepReads selected, SmartMerge will hook the pairs up based on how similarly the filenames of the Reads & DeepReads are named.
+- If only Deep nodes are selected, create a DeepMerge node.
+- If a ScanlineRender node is selected, intelligently choose whether to Merge or DeepMerge depending on other nodes that are selected.
+- If only 3D nodes are selected, create a Scene node.
+- If only 2D nodes are selected, or if nothing is selected, create a vanilla Merge node as per usual.
+
+<a href="#"><img src="https://benmcewan.com/images/github/bm_SmartMerge.gif"></a>
+
+## bm_Smoothie.py
+Easily smooth curves in Nuke's curve editor. Currently only supports single knobs _(e.g. multiply that hasn't been split into RGBA knobs, mix knobs, etc.)_.  
+<a href="https://benmcewan.com/blog/2020/08/03/programmatically-editing-animation-curves-in-nuke/">Click here</a> to read a tutorial on how this was created, and how to programatically edit animation curves in Nuke.
+
+<a href="#"><img src="https://benmcewan.com/images/github/bm_Smoothie.gif"></a>
+
+## bm_SwapInOut.py
+Easily fix scripts that use in & out, instead of mask & stencil.  
+If you do this, <a href="https://conradolson.com/nuke-using-in-out-nodes">Conrad Olson's video</a> is required watching.
+
+## bm_ViewerToggle.py
+Adds `ALT+Q` shortcut to toggle viewer exposure & gamma between custom value and default.
+
+## bm_netCopy.py
+Share a selection of nodes with other users on the same network.  
+Say goodbye to copy/pasting lines of text via IM or Email!
