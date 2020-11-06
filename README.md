@@ -73,7 +73,7 @@ A replacement for Nuke's default camera shake node. Offers more control over 3 d
 
 <a href="#"><img src="https://benmcewan.com/images/github/bm_CameraShake.png"></a>
 
-## <a href="#"><img src="https://benmcewan.com/images/github/bm_CurveRemapper_icon.png"></a> bm_CurveRemapper
+## bm_CurveRemapper
 Useful for remapping arbitrary animation curves, such as those from the CurveTool. Automatically detect an animation curve's min & max values, then remap them to new min & max values.  
 
 <a href="#"><img src="https://benmcewan.com/images/github/bm_CurveRemapper.png"></a>
