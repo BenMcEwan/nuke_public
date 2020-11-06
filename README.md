@@ -78,7 +78,7 @@ A replacement for Nuke's default camera shake node. Offers more control over 3 d
 ## bm_CurveRemapper
 Useful for remapping arbitrary animation curves, such as those from the CurveTool. Automatically detect an animation curve's min & max values, then remap them to new min & max values.  
 
-<a href="#"><img src="https://benmcewan.com/images/github/bm_CurveRemapper.png"></a>
+<a href="#"><img src="https://benmcewan.com/images/github/bm_CurveRemapperr.png"></a>
 
 ## bm_EdgeMatte
 A simple gizmo to create an edge-outline from an existing rotoshape/matte.  
@@ -164,7 +164,7 @@ Adds an easy way to set on/off keyframes on mix knobs & switch nodes.
 <a href="#"><img src="https://benmcewan.com/images/github/bm_QuickKeys.png"></a>
 
 ## bm_ShuffleShortcuts.py
-Creates shuffle node shortcuts for shuffling a single channel to all other channels.
+Creates shuffle node shortcuts for shuffling a single channel to all other channels.  
 _Note: Currently uses the old Shuffle node..._
 
 ## bm_SmartMerge.py
