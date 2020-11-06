@@ -67,8 +67,8 @@ Like the DeepMerge node, with an option to soften the blend point.
 
 <a href="#"><img src="https://benmcewan.com/images/github/DeepMerge_Advanced.png"></a>
 
-<a href="#"><img src="https://benmcewan.com/icons/github/bm_CameraShake_icon.png"></a>
-## bm_CameraShake
+
+## <a href="#"><img src="https://benmcewan.com/images/github/bm_CameraShake_icon.png"></a> bm_CameraShake
 A replacement for Nuke's default camera shake node. Offers more control over 3 different frequencies of camera shake, and also shakes the centre-point, giving more detail to sub-frame motionblur. Also has options for how to deal with edge-of-frame pixels, so pushing-in isn't always your best option anymore!  
 
 <a href="#"><img src="https://benmcewan.com/images/github/bm_CameraShake.png"></a>
@@ -78,7 +78,7 @@ Useful for remapping arbitrary animation curves, such as those from the CurveToo
 
 <a href="#"><img src="https://benmcewan.com/images/github/bm_CurveRemapper.png"></a>
 
-## <a href="#"><img src="https://benmcewan.com/icons/github/icons/bm_EdgeMatte_icon.png"></a> bm_EdgeMatte
+## <a href="#"><img src="https://benmcewan.com/icons/github/Radial.png/"></a> bm_EdgeMatte
 A simple gizmo to create an edge-outline from an existing rotoshape/matte.  
 _(there are plenty of newer gizmos like this one with different features. If you have a better one, please let me know!)_  
 
@@ -89,17 +89,17 @@ Like bm_OpticalGlow, this adds exponentially-increasing blurs together to produc
 
 <a href="#"><img src="https://benmcewan.com/images/github/bm_Lightwrap.png"></a>
 
-## <a href="#"><img src="https://benmcewan.com/icons/github/icons/bm_MatteCheck_icon.png"></a> bm_MatteCheck
+## <a href="#"><img src="https://benmcewan.com/images/github/bm_MatteCheck_icon.png"></a> bm_MatteCheck
 A simple gizmo to help QC roto and keys, by overlaying a transparent colour, viewing a premultiplied image over grey or a checkerboard (for light and dark values).  
 
 <a href="#"><img src="https://benmcewan.com/images/github/bm_MatteCheck.png"></a>
 
-## <a href="#"><img src="https://benmcewan.com/icons/github/icons/bm_NoiseGen_icon.png"></a> bm_NoiseGen
+## <a href="#"><img src="https://benmcewan.com/images/github/bm_NoiseGen_icon.png"></a> bm_NoiseGen
 Generates a random noise curve based on a minimum, maximum & frequency value.  
 
 <a href="#"><img src="https://benmcewan.com/images/github/bm_NoiseGen.png"></a>
 
-## <a href="#"><img src="https://benmcewan.com/icons/github/icons/bm_OpticalGlow_icon.png"></a> bm_OpticalGlow
+## <a href="#"><img src="https://benmcewan.com/images/github/bm_OpticalGlow_icon.png"></a> bm_OpticalGlow
 Adds exponentially-increasing blurs together to produce a more optically-correct, natural glow.  
 
 <a href="#"><img src="https://benmcewan.com/images/github/bm_OpticalGlow.png"></a>
