@@ -67,7 +67,8 @@ Like the DeepMerge node, with an option to soften the blend point.
 
 <a href="#"><img src="https://benmcewan.com/images/github/DeepMerge_Advanced.png"></a>
 
-## <img src="https://benmcewan.com/icons/github/icons/bm_CameraShake_icon.png"></a> bm_CameraShake
+<a href="#"><img src="https://benmcewan.com/icons/github/bm_CameraShake_icon.png"></a>
+## bm_CameraShake
 A replacement for Nuke's default camera shake node. Offers more control over 3 different frequencies of camera shake, and also shakes the centre-point, giving more detail to sub-frame motionblur. Also has options for how to deal with edge-of-frame pixels, so pushing-in isn't always your best option anymore!  
 
 <a href="#"><img src="https://benmcewan.com/images/github/bm_CameraShake.png"></a>
