@@ -3,6 +3,7 @@
 # nuke_public
 Ben McEwan's Gizmos & Python Scripts for Nuke.  
 Learn more about GitHub with my <a href="https://learn.benmcewan.com/github_for_compositors">GitHub for Compositors</a> course.
+<br>
 
 # Table of Contents
 
@@ -18,21 +19,22 @@ Learn more about GitHub with my <a href="https://learn.benmcewan.com/github_for_
   - [bm_NoiseGen](#bm_noisegen)
   - [bm_OpticalGlow](#bm_opticalglow)
 - [Python](#python)
-  - [bm_AutoContactSheet.py](#bm_autocontactsheet)
+  - [bm_AutoContactSheet.py](#bm_autocontactsheetpy)
   - [bm_CurveUtilities.py](#bm_curveutilitiespy)
-  - [bm_EnableTrackerTRS.py](#bm_enabletrackertrs.py)
-  - [bm_JumpToKeyframe.py](#bm_jumptokeyframe.py)
-  - [bm_MultiIBK.py](#bm_multiibk.py)
-  - [bm_NodeComment.py](#bm_nodecomment.py)
-  - [bm_NodeSandwich.py](#bm_nodesandwich.py)
-  - [bm_NukeColourConverter.py](#bm_nukecolourconverter.py)
-  - [bm_OperationSwitcher.py](#bm_operationswitcher.py)
-  - [bm_QuickKeys.py](#bm_quickkeys.py)
-  - [bm_SmartMerge.py](#bm_smartmerge.py)
-  - [bm_Smoothie.py](#bm_smoothie.py)
-  - [bm_SwapInOut.py](#bm_swapinout.py)
-  - [bm_ViewerToggle.py](#bm_viewertoggle.py)
-  - [bm_netCopy.py](#bm_netcopy.py)
+  - [bm_EnableTrackerTRS.py](#bm_enabletrackertrspy)
+  - [bm_JumpToKeyframe.py](#bm_jumptokeyframepy)
+  - [bm_MultiIBK.py](#bm_multiibkpy)
+  - [bm_NodeComment.py](#bm_nodecommentpy)
+  - [bm_NodeSandwich.py](#bm_nodesandwichpy)
+  - [bm_NukeColourConverter.py](#bm_nukecolourconverterpy)
+  - [bm_OperationSwitcher.py](#bm_operationswitcherpy)
+  - [bm_QuickKeys.py](#bm_quickkeyspy)
+  - [bm_SmartMerge.py](#bm_smartmergepy)
+  - [bm_Smoothie.py](#bm_smoothiepy)
+  - [bm_SwapInOut.py](#bm_swapinoutpy)
+  - [bm_ViewerToggle.py](#bm_viewertogglepy)
+  - [bm_netCopy.py](#bm_netcopypy)
+<br>
 
 # Gizmos
 
