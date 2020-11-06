@@ -73,18 +73,18 @@ A replacement for Nuke's default camera shake node. Offers more control over 3 d
 
 <a href="#"><img src="https://benmcewan.com/images/github/bm_CameraShake.png"></a>
 
-## <a href="#"><img src="https://benmcewan.com/icons/github/icons/bm_CurveRemapper_icon.png"></a> bm_CurveRemapper
+## <a href="#"><img src="https://benmcewan.com/images/github/bm_CurveRemapper_icon.png"></a> bm_CurveRemapper
 Useful for remapping arbitrary animation curves, such as those from the CurveTool. Automatically detect an animation curve's min & max values, then remap them to new min & max values.  
 
 <a href="#"><img src="https://benmcewan.com/images/github/bm_CurveRemapper.png"></a>
 
-## <a href="#"><img src="https://benmcewan.com/icons/github/Radial.png/"></a> bm_EdgeMatte
+## <a href="#"><img src="https://benmcewan.com/images/github/Radial.png"></a> bm_EdgeMatte
 A simple gizmo to create an edge-outline from an existing rotoshape/matte.  
 _(there are plenty of newer gizmos like this one with different features. If you have a better one, please let me know!)_  
 
 <a href="#"><img src="https://benmcewan.com/images/github/bm_EdgeMatte.png"></a>
 
-## <a href="#"><img src="https://benmcewan.com/icons/github/icons/bm_Lightwrap_icon.png"></a> bm_Lightwrap
+## <a href="#"><img src="https://benmcewan.com/images/github/bm_Lightwrap_icon.png"></a> bm_Lightwrap
 Like bm_OpticalGlow, this adds exponentially-increasing blurs together to produce a more optically-correct, natural lightwrap.  
 
 <a href="#"><img src="https://benmcewan.com/images/github/bm_Lightwrap.png"></a>
