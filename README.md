@@ -1,7 +1,7 @@
 <a href="https://benmcewan.com"><img src="https://www.benmcewan.com/images/bmlogo.png"></a>
 
 # nuke_public
-Ben McEwan's Gizmos & Python Scripts for Nuke.  
+<a href="https://www.benmcewan.com">Ben McEwan</a>'s Gizmos & Python Scripts for Nuke.  
 Learn more about GitHub with my <a href="https://learn.benmcewan.com/github_for_compositors">GitHub for Compositors</a> course.  
 <br>
 
