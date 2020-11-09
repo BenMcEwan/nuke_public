@@ -104,7 +104,7 @@ Generates a random noise curve based on a minimum, maximum & frequency value.
 ## bm_OpticalGlow
 Adds exponentially-increasing blurs together to produce a more optically-correct, natural glow.  
 
-<a href="#"><img src="https://benmcewan.com/images/github/bm_OpticalGlow.png"></a>
+<a href="#"><img src="https://benmcewan.com/images/github/bm_OpticalGlow_v4.png"></a>
 
 
 <br><br><br>
