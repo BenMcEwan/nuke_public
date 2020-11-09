@@ -1,14 +1,11 @@
-set cut_paste_input [stack 0]
-version 12.2 v1
+version 12.1 v5
 Group {
  inputs 0
- name bm_CurveRemapper
+ name bm_CurveRemapper1
  help "A simple, albeit handy tool to remap animation curves from arbitrary values to something more sensible & controllable. Made to help tackle the random output from the curve tool."
  knobChanged "n = nuke.thisNode()\nif n\['curve_input'].isAnimated() == True:\n n\['curve_minimum'].setEnabled(True)\n n\['curve_maximum'].setEnabled(True)\n n\['new_minimum'].setEnabled(True)\n n\['new_maximum'].setEnabled(True)\n n\['helpText_02'].setEnabled(True)\n n\['curve_output'].setEnabled(True)\nelse:\n n\['curve_minimum'].setEnabled(False)\n n\['curve_maximum'].setEnabled(False)\n n\['new_minimum'].setEnabled(False)\n n\['new_maximum'].setEnabled(False)\n n\['helpText_02'].setEnabled(False)\n n\['curve_output'].setEnabled(False)\n"
  tile_color 0x232323ff
  selected true
- xpos -339
- ypos -233
  addUserKnob {20 userTab l Options}
  addUserKnob {26 ""}
  addUserKnob {26 helpText_01 l "" +STARTLINE T "I N P U T  A N I M A T I O N  C U R V E  H E R E :\n"}
@@ -26,7 +23,7 @@ Group {
  addUserKnob {7 curve_output l Output t "Your remapped animation curve!" +DISABLED}
  curve_output {{lerp(curve_minimum,new_minimum,curve_maximum,new_maximum,curve_input)}}
  addUserKnob {26 ""}
- addUserKnob {26 version_info l "" +STARTLINE T "<font color='#666'><b>bm_CurveRemapper v2.0</b> created by <a href='https://www.benmcewan.com/blog' style=\"color: #888;\"><b>Ben McEwan</b></a>.<br> <b>Last updated:</b> 28th August, 2020.<br>\n"}
+ addUserKnob {26 version_info l "" +STARTLINE T "<font color='#777'><b>bm_CurveRemapper v2.0</b></font><font color='#555'> created by </font><b><a href=\"https://github.com/BenMcEwan/nuke_public\" style=\"color:#777;\">Ben McEwan</a></b>.<br>\n<font color='#555'><b>Last updated:</b> 28th August, 2020.</font>"}
 }
  Output {
   inputs 0
