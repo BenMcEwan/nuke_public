@@ -14,7 +14,7 @@ Learn more about GitHub with my <a href="https://learn.benmcewan.com/github_for_
   - [bm_CameraShake](#bm_camerashake)
   - [bm_CurveRemapper](#bm_curveremapper)
   - [bm_EdgeMatte](#bm_edgematte)
-  - [bm_Lightwrap](#bm_lightwrap)
+  - [bm_OpticalLightwrap](#bm_opticallightwrap)
   - [bm_MatteCheck](#bm_mattecheck)
   - [bm_NoiseGen](#bm_noisegen)
   - [bm_OpticalGlow](#bm_opticalglow)
