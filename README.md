@@ -1,7 +1,7 @@
 <a href="https://benmcewan.com"><img src="https://www.benmcewan.com/images/bmlogo.png"></a>
 
 # nuke_public
-Ben McEwan's Gizmos & Python Scripts for Nuke.  
+<a href="https://www.benmcewan.com">Ben McEwan</a>'s Gizmos & Python Scripts for Nuke.  
 Learn more about GitHub with my <a href="https://learn.benmcewan.com/github_for_compositors">GitHub for Compositors</a> course.  
 <br>
 
@@ -86,10 +86,10 @@ _(there are plenty of newer gizmos like this one with different features. If you
 
 <a href="#"><img src="https://benmcewan.com/images/github/bm_EdgeMatte.png"></a>
 
-## bm_Lightwrap
+## bm_OpticalLightwrap
 Like bm_OpticalGlow, this adds exponentially-increasing blurs together to produce a more optically-correct, natural lightwrap.  
 
-<a href="#"><img src="https://benmcewan.com/images/github/bm_Lightwrap.png"></a>
+<a href="#"><img src="https://benmcewan.com/images/github/bm_OpticalLightwrap_icon.png"></a>
 
 ## bm_MatteCheck
 A simple gizmo to help QC roto and keys, by overlaying a transparent colour, viewing a premultiplied image over grey or a checkerboard (for light and dark values).  
@@ -104,7 +104,7 @@ Generates a random noise curve based on a minimum, maximum & frequency value.
 ## bm_OpticalGlow
 Adds exponentially-increasing blurs together to produce a more optically-correct, natural glow.  
 
-<a href="#"><img src="https://benmcewan.com/images/github/bm_OpticalGlow.png"></a>
+<a href="#"><img src="https://benmcewan.com/images/github/bm_OpticalGlow_v4.png"></a>
 
 
 <br><br><br>
