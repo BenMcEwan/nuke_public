@@ -86,10 +86,10 @@ _(there are plenty of newer gizmos like this one with different features. If you
 
 <a href="#"><img src="https://benmcewan.com/images/github/bm_EdgeMatte.png"></a>
 
-## bm_Lightwrap
+## bm_OpticalLightwrap
 Like bm_OpticalGlow, this adds exponentially-increasing blurs together to produce a more optically-correct, natural lightwrap.  
 
-<a href="#"><img src="https://benmcewan.com/images/github/bm_Lightwrap.png"></a>
+<a href="#"><img src="https://benmcewan.com/images/github/bm_OpticalLightwrap_icon.png"></a>
 
 ## bm_MatteCheck
 A simple gizmo to help QC roto and keys, by overlaying a transparent colour, viewing a premultiplied image over grey or a checkerboard (for light and dark values).  
