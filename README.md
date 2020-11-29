@@ -73,7 +73,7 @@ Like the DeepMerge node, with an option to soften the blend point.
 ## bm_CameraShake
 A replacement for Nuke's default camera shake node. Offers more control over 3 different frequencies of camera shake, and also shakes the centre-point, giving more detail to sub-frame motionblur. Also has options for how to deal with edge-of-frame pixels, so pushing-in isn't always your best option anymore!  
 
-<a href="#"><img src="https://benmcewan.com/images/github/bm_CameraShake.png"></a>
+<a href="#"><img src="https://benmcewan.com/images/github/bm_CameraShake_v4.png"></a>
 
 ## bm_CurveRemapper
 Useful for remapping arbitrary animation curves, such as those from the CurveTool. Automatically detect an animation curve's min & max values, then remap them to new min & max values.  
