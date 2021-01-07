@@ -1,4 +1,4 @@
-<a href="https://benmcewan.com"><img src="https://www.benmcewan.com/images/bmlogo.png"></a>
+<a href="https://benmcewan.com"><img src="https://www.benmcewan.com/images/github_img/bmlogo_github.png"></a>
 
 # nuke_public
 <a href="https://www.benmcewan.com">Ben McEwan</a>'s Gizmos & Python Scripts for Nuke.  
@@ -49,7 +49,7 @@ A tool to automate the creation of simple breakdowns in Nuke. No bloated feature
   - Dissolve
   - Slide Layer In, Top-to-Bottom  
 
-<a href="#"><img src="https://benmcewan.com/images/github/Breakdownerizationer.png"></a>
+<a href="#"><img src="https://benmcewan.com/images/github_img/Breakdownerizationer_github.png"></a>
 
 ## Cloudtastic
 A light-weight, element-based atmospheric fog box scriptlet.  
@@ -63,48 +63,48 @@ A light-weight, element-based atmospheric fog box scriptlet.
   - If you have a deep render that moves through Cloudtastic's space, you may also see popping as it travels through the particles. As Cloudtastic is a light-weight hack, the best way to deal with this is to use a normalized depth pass (0 - 1 range), and mult it into the output render of Cloudtastic. While not 100% accurate, is it usually close enough when you need a quick solution!
   - If you need more accuracy, buy your FX department a beer to render true, deep volumetrics! :)  
 
-<a href="#"><img src="https://benmcewan.com/images/github/Cloudtastic.png"></a>
+<a href="#"><img src="https://benmcewan.com/images/github_img/Cloudtastic_github.png"></a>
 
 ## DeepMerge_Advanced
 Like the DeepMerge node, with an option to soften the blend point.  
 
-<a href="#"><img src="https://benmcewan.com/images/github/DeepMerge_Advanced.png"></a>
+<a href="#"><img src="https://benmcewan.com/images/github_img/DeepMerge_Advanced_github.png"></a>
 
 ## bm_CameraShake
 A replacement for Nuke's default camera shake node. Offers more control over 3 different frequencies of camera shake, and also shakes the centre-point, giving more detail to sub-frame motionblur. Also has options for how to deal with edge-of-frame pixels, so pushing-in isn't always your best option anymore!  
 
-<a href="#"><img src="https://benmcewan.com/images/github/bm_CameraShake_v4.png"></a>
+<a href="#"><img src="https://benmcewan.com/images/github_img/bm_CameraShake_github.png"></a>
 
 ## bm_CurveRemapper
 Useful for remapping arbitrary animation curves, such as those from the CurveTool. Automatically detect an animation curve's min & max values, then remap them to new min & max values.  
 
-<a href="#"><img src="https://benmcewan.com/images/github/bm_CurveRemapperr.png"></a>
+<a href="#"><img src="https://benmcewan.com/images/github_img/bm_CurveRemapper_github.png"></a>
 
 ## bm_EdgeMatte
 A simple gizmo to create an edge-outline from an existing rotoshape/matte.  
 _(there are plenty of newer gizmos like this one with different features. If you have a better one, please let me know!)_  
 
-<a href="#"><img src="https://benmcewan.com/images/github/bm_EdgeMatte.png"></a>
+<a href="#"><img src="https://benmcewan.com/images/github_img/bm_EdgeMatte_github.png"></a>
 
 ## bm_OpticalLightwrap
 Like bm_OpticalGlow, this adds exponentially-increasing blurs together to produce a more optically-correct, natural lightwrap.  
 
-<a href="#"><img src="https://benmcewan.com/images/github/bm_OpticalLightwrap.png"></a>
+<a href="#"><img src="https://benmcewan.com/images/github_img/bm_OpticalLightwrap_github.png"></a>
 
 ## bm_MatteCheck
 A simple gizmo to help QC roto and keys, by overlaying a transparent colour, viewing a premultiplied image over grey or a checkerboard (for light and dark values).  
 
-<a href="#"><img src="https://benmcewan.com/images/github/bm_MatteCheck.png"></a>
+<a href="#"><img src="https://benmcewan.com/images/github_img/bm_MatteCheck_github.png"></a>
 
 ## bm_NoiseGen
 Generates a random noise curve based on a minimum, maximum & frequency value.  
 
-<a href="#"><img src="https://benmcewan.com/images/github/bm_NoiseGen.png"></a>
+<a href="#"><img src="https://benmcewan.com/images/github_img/bm_NoiseGen_github.png"></a>
 
 ## bm_OpticalGlow
 Adds exponentially-increasing blurs together to produce a more optically-correct, natural glow.  
 
-<a href="#"><img src="https://benmcewan.com/images/github/bm_OpticalGlow_v4.png"></a>
+<a href="#"><img src="https://benmcewan.com/images/github_img/bm_OpticalGlow_github.png"></a>
 
 
 <br><br><br>
@@ -128,7 +128,7 @@ Adds some handy animation shortcuts to a knob's right-click menu:
 - Set this frame as reference frame.
 - Remap values between 0 and 1.
 
-<a href="#"><img src="https://benmcewan.com/images/github/bm_CurveUtilities.png"></a>
+<a href="#"><img src="https://benmcewan.com/images/github_img/bm_CurveUtilities_github.png"></a>
 
 ## bm_EnableTrackerTRS.py
 Adds a ```META+T``` hotkey to enable all T, R & S checkboxes in a selected Tracker node.  
@@ -161,7 +161,7 @@ Adds an easy way to set on/off keyframes on mix knobs & switch nodes.
 - ```CTRL+META+.``` sets the current frame "off", and both the next & previous frames "on".
 - ```META+/``` opens a dialog box to manaully set a first frame, last frame, and a fade duration with values other than 0 or 1.
 
-<a href="#"><img src="https://benmcewan.com/images/github/bm_QuickKeys.png"></a>
+<a href="#"><img src="https://benmcewan.com/images/github_img/bm_QuickKeys_github.png"></a>
 
 ## bm_ShuffleShortcuts.py
 Creates shuffle node shortcuts for shuffling a single channel to all other channels.  
@@ -176,13 +176,13 @@ Upgrades Nuke's default ```m``` hotkey to be context-aware:
 - If only 3D nodes are selected, create a Scene node.
 - If only 2D nodes are selected, or if nothing is selected, create a vanilla Merge node as per usual.
 
-<a href="#"><img src="https://benmcewan.com/images/github/bm_SmartMerge.gif"></a>
+<a href="#"><img src="https://benmcewan.com/images/github_img/bm_SmartMerge.gif"></a>
 
 ## bm_Smoothie.py
 Easily smooth curves in Nuke's curve editor. Currently only supports single knobs _(e.g. multiply that hasn't been split into RGBA knobs, mix knobs, etc.)_.  
 <a href="https://benmcewan.com/blog/2020/08/03/programmatically-editing-animation-curves-in-nuke/" target="_blank">Click here</a> to read a tutorial on how this was created, and how to programatically edit animation curves in Nuke.
 
-<a href="#"><img src="https://benmcewan.com/images/github/bm_Smoothie.gif"></a>
+<a href="#"><img src="https://benmcewan.com/images/github_img/bm_Smoothie.gif"></a>
 
 ## bm_SwapInOut.py
 Easily fix scripts that use in & out, instead of mask & stencil.  
