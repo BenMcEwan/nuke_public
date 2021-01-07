@@ -1,4 +1,4 @@
-<a href="https://benmcewan.com"><img src="https://www.benmcewan.com/images/github_img/bmlogo_github.png"></a>
+<a href="https://benmcewan.com"><img src="https://www.benmcewan.com/images/github_img/bm_logo.png"></a>
 
 # nuke_public
 <a href="https://www.benmcewan.com">Ben McEwan</a>'s Gizmos & Python Scripts for Nuke.  
