@@ -176,13 +176,13 @@ Upgrades Nuke's default ```m``` hotkey to be context-aware:
 - If only 3D nodes are selected, create a Scene node.
 - If only 2D nodes are selected, or if nothing is selected, create a vanilla Merge node as per usual.
 
-<a href="#"><img src="https://benmcewan.com/images/github_img/bm_SmartMerge.gif"></a>
+<a href="#"><img src="https://benmcewan.com/images/github_img/bm_SmartMerge_github.gif"></a>
 
 ## bm_Smoothie.py
 Easily smooth curves in Nuke's curve editor. Currently only supports single knobs _(e.g. multiply that hasn't been split into RGBA knobs, mix knobs, etc.)_.  
 <a href="https://benmcewan.com/blog/2020/08/03/programmatically-editing-animation-curves-in-nuke/" target="_blank">Click here</a> to read a tutorial on how this was created, and how to programatically edit animation curves in Nuke.
 
-<a href="#"><img src="https://benmcewan.com/images/github_img/bm_Smoothie.gif"></a>
+<a href="#"><img src="https://benmcewan.com/images/github_img/bm_Smoothie_github.gif"></a>
 
 ## bm_SwapInOut.py
 Easily fix scripts that use in & out, instead of mask & stencil.  
