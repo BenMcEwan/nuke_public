@@ -57,8 +57,9 @@ def curve_respeed():
     elif respeed < 100:
     	anim.keys()[-1].x = anim.keys()[-1].x+(((anim.keys()[-1].x-anim.keys()[0].x)/(respeed*0.01))/2)
     else:
-		nuke.message("No respeed happening")
+    	nuke.message("No respeed happening")
     anim.keys()[-1].extrapolation = nuke.LINEAR
     print "\n"+str(respeed)+"% Respeed, Last Frame = "+str(anim.keys()[-1].x)
+    
 nuke.menu('Animation').addCommand("Curve Utilities/% Respeed Curve", "bm_CurveUtilities.curve_respeed()")
 """

@@ -1,9 +1,13 @@
-version 11.1 v1
+set cut_paste_input [stack 0]
+version 13.1 v2
 Group {
-name bm_NoiseGen
  inputs 0
+ name bm_NoiseGen
  help "Generates a noise curve."
  tile_color 0x222222ff
+ selected true
+ xpos 58
+ ypos 74
  addUserKnob {20 optionsTab l Options}
  addUserKnob {26 ""}
  addUserKnob {4 pChoice l "Noise Type" M {Random Noise Sine Triangle Square Sawtooth Bounce Blip "" "" ""}}
@@ -21,10 +25,7 @@ name bm_NoiseGen
  addUserKnob {7 noiseOutput l Output R -10 10}
  noiseOutput {{"pChoice==0?random((frame+noiseSeed+noiseOffset)/noiseFrequency) * (noiseMax-noiseMin) + noiseMin:\npChoice==1?(noise((frame+noiseSeed+noiseOffset)/noiseFrequency)+1)/2 * (noiseMax-noiseMin) + noiseMin:\npChoice==2?(sin(2*pi*(frame+noiseSeed+noiseOffset)/noiseFrequency)+1)/2 * (noiseMax-noiseMin) + noiseMin:\npChoice==3?(asin(sin(2*pi*(frame+noiseSeed+noiseOffset)/noiseFrequency))/pi+0.5) * (noiseMax-noiseMin) + noiseMin:\npChoice==4?int(sin(2*pi*(frame+noiseSeed+noiseOffset)/noiseFrequency)+1) * (noiseMax-noiseMin) + noiseMin:\npChoice==5?((frame+noiseSeed+noiseOffset) % noiseFrequency)/noiseFrequency * (noiseMax-noiseMin) + noiseMin:\npChoice==6?abs(sin(pi*(frame+noiseSeed + noiseOffset)/noiseFrequency))* (noiseMax-noiseMin) + noiseMin:\npChoice==7?((frame+noiseSeed+(noiseOffset+noiseFrequency)) % (noiseFrequency+(noiseFrequency/5))/(noiseFrequency)) *(noiseFrequency/(noiseFrequency/5)) - (noiseFrequency/(noiseFrequency/5)) >= 0 ? noiseMax : noiseMin:\n0"}}
  addUserKnob {26 ""}
- addUserKnob {20 info l Info}
- addUserKnob {26 ""}
- addUserKnob {26 versionText l "" +STARTLINE T "\nCreated by Ben McEwan\nwww.benmcewan.com\n\nVersion 2.0\nLast Updated: January 23rd, 2018\n"}
- addUserKnob {26 ""}
+ addUserKnob {26 version_info l "" +STARTLINE T "<font color='#777'><b>bm_NoiseGen v2.0</b></font><font color='#555'> created by </font><b><a href=\"https://github.com/BenMcEwan/nuke_public\" style=\"color:#777;\">Ben McEwan</a></b>.<br>\n<font color='#555'><b>Last updated:</b> 23rd January, 2018.</font>"}
 }
  Output {
   inputs 0

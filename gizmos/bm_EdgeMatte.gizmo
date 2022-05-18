@@ -1,9 +1,13 @@
-#! /data/studio/upipe/apps/nuke/11.1v1/bin/linux/centos7/libnuke-11.1.1.so -nx
-version 11.1 v1
+set cut_paste_input [stack 0]
+version 13.1 v2
+push $cut_paste_input
 Group {
-name bm_EdgeMatte
+ name bm_EdgeMatte
  help "Created to \"edgeDetect\" mattes. Probably better gizmos out there that do the same thngSimple gizmo to get a clean, controllable outline (like Edge Detect) from any matte. Useful for isolating edgeExtends and the like."
  tile_color 0x212121ff
+ selected true
+ xpos -160
+ ypos 186
  addUserKnob {20 Options}
  addUserKnob {26 ""}
  addUserKnob {4 filterType l Filter M {Box Triangle Quadratic Gaussian}}
@@ -24,10 +28,7 @@ name bm_EdgeMatte
  edgeScale 1
  addUserKnob {12 edgeCentre l INVISIBLE +INVISIBLE}
  edgeCentre {1024 778}
- addUserKnob {20 infoTab l Info}
- addUserKnob {26 "" +STARTLINE}
- addUserKnob {26 versionInfo l "" +STARTLINE T "\nCreated by Ben McEwan\nwww.benmcewan.com\n\nVersion 1.1\nLast Updated: January 23rd, 2018\n"}
- addUserKnob {26 "" +STARTLINE}
+ addUserKnob {26 version_info l "" +STARTLINE T "<font color='#777'><b>bm_EdgeMatte v2.0</b></font><font color='#555'> created by </font><b><a href=\"https://github.com/BenMcEwan/nuke_public\" style=\"color:#777;\">Ben McEwan</a></b>.<br>\n<font color='#555'><b>Last updated:</b> 23rd January, 2018.</font>"}
 }
  Input {
   inputs 0
@@ -43,7 +44,7 @@ name bm_EdgeMatte
   xpos 576
   ypos 523
  }
-set Nbbe7900 [stack 0]
+set N8370f400 [stack 0]
  FilterErode {
   channels alpha
   size {{innerEdge} {innerEdge}}
@@ -59,7 +60,7 @@ set Nbbe7900 [stack 0]
   xpos 487
   ypos 622
  }
-push $Nbbe7900
+push $N8370f400
  FilterErode {
   channels alpha
   size {{-outerEdge} {-outerEdge}}
@@ -103,7 +104,6 @@ push $Nbbe7900
   center {{edgeCentre} {edgeCentre}}
   shutteroffset centred
   name Transform1
-  selected true
   xpos 538
   ypos 827
  }
