@@ -21,6 +21,7 @@ Learn more about GitHub with my <a href="https://learn.benmcewan.com/github_for_
 - [Python](#python)
   - [bm_AutoContactSheet.py](#bm_autocontactsheetpy)
   - [bm_CurveUtilities.py](#bm_curveutilitiespy)
+  - [bm_DefaultBackdrop.py](#bm_DefaultBackdroppy)
   - [bm_EnableTrackerTRS.py](#bm_enabletrackertrspy)
   - [bm_JumpToKeyframe.py](#bm_jumptokeyframepy)
   - [bm_MultiIBK.py](#bm_multiibkpy)
@@ -29,6 +30,7 @@ Learn more about GitHub with my <a href="https://learn.benmcewan.com/github_for_
   - [bm_NukeColourConverter.py](#bm_nukecolourconverterpy)
   - [bm_OperationSwitcher.py](#bm_operationswitcherpy)
   - [bm_QuickKeys.py](#bm_quickkeyspy)
+  - [bm_PulldownKnobCycler.py](#bm_PulldownKnobCyclerpy)
   - [bm_SmartMerge.py](#bm_smartmergepy)
   - [bm_ShuffleShortcuts.py](#bm_shuffleshortcutspy)
   - [bm_Smoothie.py](#bm_smoothiepy)
@@ -159,7 +161,7 @@ Convert Nuke's hex colour to easier web-based hex, or RGB integer based off the 
 ## bm_OperationSwitcher.py
 ```CTRL+ALT+S``` toggles a Merge node's operation between over/under, mask/stencil, plus/from, etc.  
 
-##bm_PulldownKnobCycler.py
+## bm_PulldownKnobCycler.py
 ```PGUP``` and ```PGDOWN``` cycles through operation and channels knobs on any selected node.
 
 ## bm_QuickKeys.py
