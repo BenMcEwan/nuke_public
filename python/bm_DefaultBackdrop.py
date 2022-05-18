@@ -148,21 +148,6 @@ def backdrop_lumachange(lumaChangeValue):
 # Add Menu
 bm_BackdropMenu = nuke.menu('Nodes').addMenu('bmBackdrops', icon='Backdrop_HighRes.png')
 
-# bm_BackdropMenu.addCommand('Backdrop Tools/Luma +', 'bm_DefaultBackdrop.backdrop_lumachange(0.1)', 'alt+PgUp')
-# bm_BackdropMenu.addCommand('Backdrop Tools/Luma -', 'bm_DefaultBackdrop.backdrop_lumachange(0.1)', 'alt-PgDown')
-bm_BackdropMenu.addCommand('Backdrop Tools/Size +', 'bm_DefaultBackdrop.backdrop_scale(50)', 'alt++')
-bm_BackdropMenu.addCommand('Backdrop Tools/Size -', 'bm_DefaultBackdrop.backdrop_scale(-50)', 'alt+-')
-bm_BackdropMenu.addCommand("Backdrop Tools/Shift Hue", "backdropTools.shiftBackdropHue()", "Shift+H")
-bm_BackdropMenu.addCommand("Backdrop Tools/Spread Hues", "backdropTools.spreadBackdropHues()", "Alt+Shift+H")
-bm_BackdropMenu.addCommand("Backdrop Tools/Luma +", "backdropTools.shiftBackdropLuma(step = 0.1)", "Alt+PgUp")
-bm_BackdropMenu.addCommand("Backdrop Tools/Luma -", "backdropTools.shiftBackdropLuma(step = -0.1)", "Alt+PgDown")
-bm_BackdropMenu.addCommand("Backdrop Tools/Sat +", "backdropTools.shiftBackdropSat(step = 0.1)", "Alt+.")
-bm_BackdropMenu.addCommand("Backdrop Tools/Sat -", "backdropTools.shiftBackdropSat(step = -0.1)", "Alt+,")
-bm_BackdropMenu.addCommand('Backdrop Tools/Randomize Colour', 'bm_DefaultBackdrop.backdrop_randomcolour()', 'alt+*')
-bm_BackdropMenu.addCommand("Backdrop Tools/Fix Layering", "backdropTools.fixBackdropDepth()", "Ctrl+Shift+A")
-
-bm_BackdropMenu.addCommand('-', "", "")  ###  Add separator  ###
-
 bm_BackdropMenu.addCommand('Generic', 'bm_DefaultBackdrop.defaultBackdrop(0.267, 0.267, 0.267, 0.498, 0.498, 0.498, 1.5, 1.5, 0, "Arial", 60)', 'alt+b', icon="Backdrop_HighRes.png")
 bm_BackdropMenu.addCommand('Random Colour', 'bm_DefaultBackdrop.defaultBackdrop(random.random(), random.random(), random.random(), random.random(), random.random(), random.random(), 1.5, 1.5, 0, "Arial", 60)', 'ctrl+alt+b', icon="Backdrop_Rainbow.png")
 
