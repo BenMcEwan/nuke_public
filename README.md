@@ -122,6 +122,12 @@ Powers up Nuke's default contact sheet with features such as:
 
 <a href="https://benmcewan.com/blog/2018/08/26/power-up-your-contact-sheets/" target="_blank">Click here</a> for a tutorial on how I made this.  
 
+## bm_DefaultBackdrop.py
+Adds better backdrop node defaults & presets.
+```ALT+B``` is the shortcut, or you can use the menu to grab a specific colour.
+
+<a href="#"><img src="https://benmcewan.com/images/github_img/bmbackdrop.PNG"></a>
+
 ## bm_CurveUtilities.py
 Adds some handy animation shortcuts to a knob's right-click menu:
 - FrameHold animation.
@@ -152,6 +158,9 @@ Convert Nuke's hex colour to easier web-based hex, or RGB integer based off the 
 
 ## bm_OperationSwitcher.py
 ```CTRL+ALT+S``` toggles a Merge node's operation between over/under, mask/stencil, plus/from, etc.  
+
+##bm_PulldownKnobCycler.py
+```PGUP``` and ```PGDOWN``` cycles through operation and channels knobs on any selected node.
 
 ## bm_QuickKeys.py
 Adds an easy way to set on/off keyframes on mix knobs & switch nodes.  
