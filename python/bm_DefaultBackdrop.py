@@ -124,7 +124,7 @@ def TILEtoRGB(V):
 
     return R,G,B
 
-
+"""
 def backdrop_lumachange(lumaChangeValue):
 
     if nuke.selectedNode().Class() == "BackdropNode":
@@ -137,7 +137,7 @@ def backdrop_lumachange(lumaChangeValue):
     cur_font_color = TILEtoRGB(backdrop.knob('note_font_color').value())
     backdrop.knob('tile_color').setValue(bm_NukeColourConverter.hex_colour_to_rgb((cur_tile_color[0]+lumaChangeValue), (cur_tile_color[1]+lumaChangeValue), (cur_tile_color[2]+lumaChangeValue)))
     backdrop.knob('note_font_color').setValue(bm_NukeColourConverter.hex_colour_to_rgb((cur_font_color[0]+lumaChangeValue), (cur_font_color[1]+lumaChangeValue), (cur_font_color[2]+lumaChangeValue)))
-
+"""
 
 
 
@@ -148,13 +148,17 @@ def backdrop_lumachange(lumaChangeValue):
 # Add Menu
 bm_BackdropMenu = nuke.menu('Nodes').addMenu('bmBackdrops', icon='Backdrop_HighRes.png')
 
-bm_BackdropMenu.addCommand('Generic', 'bm_DefaultBackdrop.defaultBackdrop(0.267, 0.267, 0.267, 0.498, 0.498, 0.498, 1.5, 1.5, 0, "Arial", 60)', 'alt+b', icon="Backdrop_HighRes.png")
-bm_BackdropMenu.addCommand('Random Colour', 'bm_DefaultBackdrop.defaultBackdrop(random.random(), random.random(), random.random(), random.random(), random.random(), random.random(), 1.5, 1.5, 0, "Arial", 60)', 'ctrl+alt+b', icon="Backdrop_Rainbow.png")
-
-bm_BackdropMenu.addCommand('-', "", "")  ###  Add separator  ###
+# bm_BackdropMenu.addCommand('Backdrop Tools/Luma +', 'bm_DefaultBackdrop.backdrop_lumachange(0.1)', 'alt+PgUp')
+# bm_BackdropMenu.addCommand('Backdrop Tools/Luma -', 'bm_DefaultBackdrop.backdrop_lumachange(0.1)', 'alt-PgDown')
+# bm_BackdropMenu.addCommand('-', "", "")  ###  Add separator  ###
 
 bm_BackdropMenu.addCommand('Generic', 'bm_DefaultBackdrop.defaultBackdrop("ask", 0.267, 0.267, 0.267, 0.498, 0.498, 0.498, 1.5, 1.5, 0, "Arial", 60)', 'alt+b', icon="Backdrop.png")
 bm_BackdropMenu.addCommand('Random Colour', 'bm_DefaultBackdrop.defaultBackdrop("ask", random.random(), random.random(), random.random(), random.random(), random.random(), random.random(), 1.5, 1.5, 0, "Arial", 60)', 'ctrl+alt+b', icon="Backdrop.png")
+
+bm_BackdropMenu.addCommand('-', "", "")  ###  Add separator  ###
+
+bm_BackdropMenu.addCommand('Plate', 'bm_DefaultBackdrop.defaultBackdrop(" Plate", 0.267, 0.267, 0.267, 0.498, 0.498, 0.498, 1.5, 1.5, -1, "Arial", 60)', icon="Backdrop20Grey.png")
+bm_BackdropMenu.addCommand('Denoise', 'bm_DefaultBackdrop.defaultBackdrop(" Denoise", 0.267, 0.267, 0.267, 0.498, 0.498, 0.498, 1.5, 1.5, -1, "Arial", 60)', icon="Backdrop20Grey.png")
 
 bm_BackdropMenu.addCommand('-', "", "")  ###  Add separator  ###
 
