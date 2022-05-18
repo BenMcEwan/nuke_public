@@ -153,8 +153,8 @@ bm_BackdropMenu.addCommand('Random Colour', 'bm_DefaultBackdrop.defaultBackdrop(
 
 bm_BackdropMenu.addCommand('-', "", "")  ###  Add separator  ###
 
-bm_BackdropMenu.addCommand('Plate', 'bm_DefaultBackdrop.defaultBackdrop(" Plate", 0.267, 0.267, 0.267, 0.498, 0.498, 0.498, 1.5, 1.5, -1, "Arial", 60)', icon="Backdrop20Grey.png")
-bm_BackdropMenu.addCommand('Denoise', 'bm_DefaultBackdrop.defaultBackdrop(" Denoise", 0.267, 0.267, 0.267, 0.498, 0.498, 0.498, 1.5, 1.5, -1, "Arial", 60)', icon="Backdrop20Grey.png")
+bm_BackdropMenu.addCommand('Generic', 'bm_DefaultBackdrop.defaultBackdrop("ask", 0.267, 0.267, 0.267, 0.498, 0.498, 0.498, 1.5, 1.5, 0, "Arial", 60)', 'alt+b', icon="Backdrop.png")
+bm_BackdropMenu.addCommand('Random Colour', 'bm_DefaultBackdrop.defaultBackdrop("ask", random.random(), random.random(), random.random(), random.random(), random.random(), random.random(), 1.5, 1.5, 0, "Arial", 60)', 'ctrl+alt+b', icon="Backdrop.png")
 
 bm_BackdropMenu.addCommand('-', "", "")  ###  Add separator  ###
 
