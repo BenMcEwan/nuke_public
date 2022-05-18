@@ -1,10 +1,10 @@
 # --------------------------------------------------------------
 #  bm_SmartMerge.py
-#  Version: 1.2.2
+#  Version: 1.3.0
 #  Author: Ben McEwan
 #
 #  Last Modified by: Ben McEwan
-#  Last Updated: October 22nd, 2019
+#  Last Updated: May 17th, 2022
 # --------------------------------------------------------------
 
 # --------------------------------------------------------------
@@ -71,31 +71,31 @@ def bm_SmartMerge():
         # For said unsorted nodes, put them into the twoD_nodes list.
         if node not in twoD_nodes and node not in threeD_nodes and node not in deep_nodes and node not in wildcard_nodes:
             twoD_nodes.append(node)
-    
+
     # Delete the nodes we created for the connection test.
     nuke.delete(test_deep)
     nuke.delete(test_3D)
 
     # Output some handy data into the Script Editor.
-    print "\n\n######################################\n  I have sorted the nodes as follows\n######################################"
+    print("\n\n######################################\n  I have sorted the nodes as follows\n######################################")
 
-    print "\n2D NODES ("+str(len(twoD_nodes))+" found):"
+    print("\n2D NODES ("+str(len(twoD_nodes))+" found):")
     for node in twoD_nodes:
-        print "- "+node.name()
+        print("- "+node.name())
 
-    print "\n3D NODES ("+str(len(threeD_nodes))+" found):"
+    print("\n3D NODES ("+str(len(threeD_nodes))+" found):")
     for node in threeD_nodes:
-        print "- "+node.name()
+        print("- "+node.name())
 
-    print "\nDEEP NODES ("+str(len(deep_nodes))+" found):"
+    print("\nDEEP NODES ("+str(len(deep_nodes))+" found):")
     for node in deep_nodes:
-        print "- "+node.name()
+        print("- "+node.name())
 
-    print "\nWILDCARD NODES ("+str(len(wildcard_nodes))+" found):"
+    print("\nWILDCARD NODES ("+str(len(wildcard_nodes))+" found):")
     for node in wildcard_nodes:
-        print "- "+node.name()
+        print("- "+node.name())
 
-    print "\n\n# -------------------------------------\n\n"
+    print("\n\n# -------------------------------------\n\n")
 
 
 
@@ -127,8 +127,8 @@ def bm_SmartMerge():
         	node.setSelected(True)
 
     	# Create the Merge node, and output a confirmation of what happened in the Script Editor.
-        nuke.createNode('Merge2')       
-        print "Merging "+str(len(twoD_nodes))+" 2D nodes with "+str(len(wildcard_nodes))+" wildcard nodes."
+        nuke.createNode('Merge2')
+        print("Merging "+str(len(twoD_nodes))+" 2D nodes with "+str(len(wildcard_nodes))+" wildcard nodes.")
         return
 
 
@@ -151,7 +151,7 @@ def bm_SmartMerge():
 
     	# Create the Scene node, and output a confirmation of what happened in the Script Editor.
         nuke.createNode('Scene')
-        print "Merging "+str(len(threeD_nodes))+" 3D nodes with "+str(len(wildcard_nodes))+" wildcard nodes."
+        print("Merging "+str(len(threeD_nodes))+" 3D nodes with "+str(len(wildcard_nodes))+" wildcard nodes.")
         return
 
 
@@ -174,7 +174,7 @@ def bm_SmartMerge():
 
     	# Create the DeepMerge node, and output a confirmation of what happened in the Script Editor.
         nuke.createNode('DeepMerge')
-        print "Merging "+str(len(deep_nodes))+" Deep nodes with "+str(len(wildcard_nodes))+" wildcard nodes."
+        print("Merging "+str(len(deep_nodes))+" Deep nodes with "+str(len(wildcard_nodes))+" wildcard nodes.")
         return
 
 
@@ -206,7 +206,7 @@ def bm_SmartMerge():
             dr.knob('ypos').setValue(yPos+95)
 
 		# Of course, we will output a confirmation of what happened in the Script Editor.
-        print str(len(deep_nodes))+" beautys & deeps matched and paired"
+        print(str(len(deep_nodes))+" beautys & deeps matched and paired")
         return
 
 

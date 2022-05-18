@@ -1,12 +1,15 @@
-#! /data/studio/upipe/apps/nuke/11.1v1/bin/linux/centos7/libnuke-11.1.1.so -nx
-version 11.1 v1
+set cut_paste_input [stack 0]
+version 13.1 v2
+push $cut_paste_input
 Group {
-name bm_MatteCheck
- inputs 2
+ name bm_MatteCheck
  help "A simple tool designed to check the accuracy of mattes. Choose between overlaying a red color, viewing the matte against a grey background, or viewing the matte against a checkerboard."
  knobChanged "n = nuke.thisNode()\nk = nuke.thisKnob()\n\nif k.name() in ('Type', 'showPanel'):\n    Type = n\['Type'].value()\n    if Type == 'Colour Overlay':\n\n        n\['overlayColour'].setVisible(True)\n        n\['overlayMix'].setVisible(True)\n        n\['greyAmt'].setVisible(False)\n        n\['chkSize'].setVisible(False)\n        n\['chkContrast'].setVisible(False)\n\n    elif Type == 'Grey Background':\n\n        n\['overlayColour'].setVisible(False)\n        n\['overlayMix'].setVisible(False)\n        n\['greyAmt'].setVisible(True)\n        n\['chkSize'].setVisible(False)\n        n\['chkContrast'].setVisible(False)\n\n    elif Type == 'Checkerboard':\n\n        n\['overlayColour'].setVisible(False)\n        n\['overlayMix'].setVisible(False)\n        n\['greyAmt'].setVisible(False)\n        n\['chkSize'].setVisible(True)\n        n\['chkContrast'].setVisible(True)"
  tile_color 0x232323ff
  note_font Verdana
+ selected true
+ xpos -379
+ ypos 200
  mapsize {0.15 0.15}
  addUserKnob {20 Options}
  addUserKnob {26 ""}
@@ -25,10 +28,7 @@ name bm_MatteCheck
  addUserKnob {7 chkContrast l Contrast +HIDDEN}
  chkContrast 0.27
  addUserKnob {26 ""}
- addUserKnob {20 infoTab l Info}
- addUserKnob {26 "" +STARTLINE}
- addUserKnob {26 versionInfo l "" +STARTLINE T "\nCreated by Ben McEwan\nwww.benmcewan.com\n\nVersion 1.1\nLast Updated: January 23rd, 2018\n"}
- addUserKnob {26 "" +STARTLINE}
+ addUserKnob {26 version_info l "" +STARTLINE T "<font color='#777'><b>bm_MatteCheck v2.0</b></font><font color='#555'> created by </font><b><a href=\"https://github.com/BenMcEwan/nuke_public\" style=\"color:#777;\">Ben McEwan</a></b>.<br>\n<font color='#555'><b>Last updated:</b> 23rd January, 2018.</font>"}
 }
  Input {
   inputs 0
@@ -42,7 +42,7 @@ name bm_MatteCheck
   xpos -63
   ypos -320
  }
-set Nb954f10 [stack 0]
+set N8370c800 [stack 0]
  Dot {
   name Dot6
   label "  "
@@ -51,14 +51,14 @@ set Nb954f10 [stack 0]
   xpos -63
   ypos -152
  }
-push $Nb954f10
+push $N8370c800
  Invert {
   channels alpha
   name Invert1
   xpos 76
   ypos -329
  }
-set N82332a0 [stack 0]
+set N836a7c00 [stack 0]
  Dot {
   name Dot5
   xpos 313
@@ -87,13 +87,13 @@ set N82332a0 [stack 0]
   xpos -94
   ypos -495
  }
-set Nb9c9030 [stack 0]
+set N836a6c00 [stack 0]
  Dot {
   name Dot2
   xpos 110
   ypos -492
  }
-set Nba071f0 [stack 0]
+set N836a6800 [stack 0]
  Dot {
   name Dot3
   xpos 313
@@ -105,7 +105,7 @@ set Nba071f0 [stack 0]
   xpos 279
   ypos -395
  }
-push $N82332a0
+push $N836a7c00
  Constant {
   inputs 0
   color {{greyAmt} {greyAmt} {greyAmt} {curve}}
@@ -113,14 +113,14 @@ push $N82332a0
   xpos 177
   ypos -404
  }
-push $Nba071f0
+push $N836a6800
  Keymix {
   inputs 3
   name Keymix2
   xpos 76
   ypos -387
  }
-push $Nb954f10
+push $N8370c800
  Constant {
   inputs 0
   color {{overlayColour.r} {overlayColour.g} {overlayColour.b} {curve}}
@@ -128,7 +128,7 @@ push $Nb954f10
   xpos -343
   ypos -346
  }
-push $Nb9c9030
+push $N836a6c00
  Dot {
   name Dot1
   xpos -172

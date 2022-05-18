@@ -22,7 +22,7 @@ def bm_ViewerToggle():
 
     global gain_vals
     global gamma_vals
-    
+
     viewer = nuke.activeViewer().node()
     gain = viewer.knob('gain')
     gamma = viewer.knob('gamma')
@@ -36,7 +36,7 @@ def bm_ViewerToggle():
     else:
         gain.setValue(gain_vals[1])
         gamma.setValue(gamma_vals[1])
-        
+
 
 
 # Add to menu

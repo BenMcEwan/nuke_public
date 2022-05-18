@@ -45,7 +45,7 @@ def bm_MultiIBK():
     # Positioning in the node graph is automatic as each copy of the node will be selected upon creation.
     for i in range(0,6):
 
-        colour_linked = nuke.createNode('IBKColourV3', 'screen_type green')
+        colour_linked = nuke.createNode('IBKColourV3', 'screen_type green', inpanel = False)
         colour_linked.knob('Size').setExpression('input.Size')
         colour_linked.knob('off').setExpression('input.off')
         colour_linked.knob('mult').setExpression('input.mult')
