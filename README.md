@@ -1,10 +1,9 @@
-<a href="https://benmcewan.com"><img src="https://www.benmcewan.com/images/github_img/bm_logo.png"></a>
+<!--<a href="https://benmcewan.com"><img src="https://www.benmcewan.com/images/github_img/bm_logo.png"></a>
 
-# nuke_public
-<a href="https://www.benmcewan.com">Ben McEwan</a>'s Gizmos & Python Scripts for Nuke.  
-Learn more about GitHub with my <a href="https://learn.benmcewan.com/github_for_compositors">GitHub for Compositors</a> course.  
-<br>
+# nuke_public-->
+<a href="https://www.benmcewan.com">Ben McEwan</a>'s Gizmos & Python Scripts for Nuke.
 
+<!--
 # Table of Contents
 
 - [Gizmos](#gizmos)
@@ -38,6 +37,7 @@ Learn more about GitHub with my <a href="https://learn.benmcewan.com/github_for_
   - [bm_ViewerToggle.py](#bm_viewertogglepy)
   - [bm_netCopy.py](#bm_netcopypy)
 <br>
+
 
 # Gizmos
 
@@ -205,3 +205,4 @@ Adds `ALT+Q` shortcut to toggle viewer exposure & gamma between custom value and
 ## bm_netCopy.py
 Share a selection of nodes with other users on the same network.  
 Say goodbye to copy/pasting lines of text via IM or Email!
+-->
